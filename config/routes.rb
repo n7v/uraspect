@@ -1,4 +1,4 @@
-Cite::Application.routes.draw do
+Uraspect::Application.routes.draw do
 
   mount_roboto
 
