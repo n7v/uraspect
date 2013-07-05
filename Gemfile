@@ -19,6 +19,8 @@ gem 'globalize3'
 gem 'ActiveAdmin-Globalize3-inputs'
 gem 'ancestry'
 gem 'email_validator', require: 'email_validator/strict'
+gem 'ffaker'
+gem 'factory_girl_rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -86,8 +88,6 @@ end
 
 group :development, :test do
   gem 'debugger'
-  gem 'ffaker'
-  gem 'factory_girl_rails'
 end
 
 gem 'rename' # For rename project with one comand "rails g rename:app_to New-Name"
