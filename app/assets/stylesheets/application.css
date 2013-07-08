@@ -10,5 +10,7 @@
  *
  *= require_self
  *= require jquery.mCustomScrollbar
+ *= require bootstrap/css/bootstrap
+ *= require bootstrap/css/bootstrap-responsive.min
  *= require_tree .
  */

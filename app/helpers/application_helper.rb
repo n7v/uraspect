@@ -7,7 +7,7 @@ module ApplicationHelper
   def seo_meta_tags
     if @page && @page.seo
       "<meta name='description' content='#{@page.seo.description}' />"+
-      "<meta name='keywords' content='#{@page.seo.keywords}' />"+
+      "<meta name='author' content='' />"+
       "<title>#{@page.seo.title}</title>"
     end
   end

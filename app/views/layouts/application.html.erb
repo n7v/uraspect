@@ -1,20 +1,81 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-  <%= raw seo_meta_tags %>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-</head>
-<body>
-<div id="page">
-  <%= render 'shared/header' %>
-  <%= yield %>
-</div>
 
-<%= render 'shared/footer' %>
+    <title>Добро пожаловать | ЮрАспект</title>
+
+    <!-- Meta -->
+    <%= raw seo_meta_tags %>
+    <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- CSS Global Compulsory-->
+    <%= stylesheet_link_tag "application", :media => "all" %>
+    <!-- <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/headers/header1.css"> -->
+    <!-- <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/style_responsive.css"> -->
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css" type="text/css">
+    <!--[if IE 9]>
+        <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax_slider_for_ie9.css" type="text/css">
+    <![endif]-->
+    <!-- CSS Theme -->
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="assets/css/themes/default.css" id="style_color">
+    <link rel="stylesheet" href="assets/css/themes/headers/default.css" id="style_color-header-1">
+    <!--CSS Design-->
+    <link rel="stylesheet" href="assets/css/design_style.css">
+    <link rel="stylesheet" href="assets/css/menu_style.css">
+
+    <!-- JS Global Compulsory -->
+    <script type="text/javascript" src="assets/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
+    <script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/pages/index.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+          	App.init();
+            App.initSliders();
+            Index.initParallaxSlider();
+        });
+    </script>
+    <!--[if lt IE 9]>
+        <script src="assets/js/respond.js"></script>
+    <![endif]-->
+    <%= javascript_include_tag "application" %>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <%= render 'shared/header' %>
+  <!-- Content Part -->
+  <div id="page">
+    <%= yield %>
+  </div>
+  <!-- End Content Part -->
+
+  <!--=== Footer ===-->
+  <%= render 'shared/footer' %>
+  <!--=== End Footer ===-->
 
 </body>
-</html>
+</html>	

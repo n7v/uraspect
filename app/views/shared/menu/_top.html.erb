@@ -1,11 +1,24 @@
 <% if @top_menu.present? %>
-  <div>
-    <ul>
+    <ul class="nav top-2">
       <% @top_menu.each do |page| %>
-        <li>
+        <li class="active">
           <%= link_to content_tag(:span, page[:name]), slug_path(slug: page[:slug]) %>
         </li>
       <% end %>
+      <li>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Контакты
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog_item.html">Blog Item</a></li>
+          <li><a href="blog_left_sidebar.html">Blog Left Sidebar</a></li>
+          <li><a href="blog_item_left_sidebar.html">Blog Item Left Sidebar</a></li>
+        </ul>
+        <b class="caret-out"></b>
+      </li>
+      <li class="search_icon">
+        <a class="search"><i class="icon-search search-btn"></i></a>
+      </li>
     </ul>
-  </div>
 <% end %>
