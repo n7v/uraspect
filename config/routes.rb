@@ -2,7 +2,7 @@ Uraspect::Application.routes.draw do
 
   mount_roboto
 
-  root :to => "pages#show", :slug => 'index'
+  root :to => "pages#index"
 
   mount Ckeditor::Engine => '/ckeditor'
 

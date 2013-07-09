@@ -3,7 +3,7 @@ class PagesController < ApplicationController
   before_filter :menu_main
 
   def index
-    @jurisprudences = Jurisprudence.order('created_at ASC').last(3)
+    @jurisprudences = Jurisprudence.order('created_at DESC').first(3)
   end
 
   def show
