@@ -10,7 +10,6 @@ EcoHelpers =
     _context = EcoHelpers.merge(_context, EcoHelpers)
     JST["templates/#{template_name}"](_context)
 
-
 $.app.render = (template_name, data) ->
   html = EcoHelpers.render(template_name, data)
   $(html)
