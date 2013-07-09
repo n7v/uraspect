@@ -2,6 +2,10 @@ class PagesController < ApplicationController
   layout :layout
   before_filter :menu_main
 
+  def index
+    @jurisprudences = Jurisprudence.order('created_at ASC').last(3)
+  end
+
   def show
     @page = Page.find_by_slug(params[:slug]) || Page.find(params[:slug])
     render params[:slug] if controller_view_exists?(params[:slug])
