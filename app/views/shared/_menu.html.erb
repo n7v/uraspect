@@ -6,6 +6,20 @@
       <span class="icon-bar"></span>
     </a><!-- /nav-collapse -->
     <div class="nav-collapse collapse">
+			<nav class="header-menu">
+				<ul>
+					<% Page.roots.visible.each do |page| %>
+						<li class="#{class_attr} menu_item">
+							<%= link_to content_tag(:span, page.name), slug_path(page) %>
+							<ul class="nested_links hidden">
+								<% page.children.each do |child| %>
+									<%= link_to content_tag(:span, child.name), slug_path(child) %>
+								<% end %>  
+							</ul>
+						</li>
+					<% end %>
+				</ul>
+			</nav>
       <div class="search-open">
         <div class="input-append">
           <form>
@@ -18,19 +32,6 @@
   </div>
 </div>
 
-# вот вывод меню
-<nav class="header-menu">
-	<ul>
-		<% Page.roots.visible.each do |page| %>
-			<li class="#{class_attr} menu_item">
-				<%= link_to content_tag(:span, page.name), slug_path(page) %>
-				<ul class="nested_links hidden">
-				  <% page.children.each do |child| %>
-				  	<%= link_to content_tag(:span, child.name), slug_path(child) %>
-				  <% end %>  
-				</ul>
-			</li>
-		<% end %>
-	</ul>
-</nav>
+
+
 
