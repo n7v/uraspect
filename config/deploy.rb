@@ -10,7 +10,7 @@ require 'capistrano/ext/multistage'
 set :application, "uraspect" #write app name there
 
 set :scm, :git
-set :repository,  "git@github.com:Nesit/uraspect.git" #place your repo there
+set :repository,  "git@github.com:balticit/uraspect.git" #place your repo there
 
 set :deploy_via, :remote_cache
 
