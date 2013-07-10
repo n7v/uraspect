@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
   layout :layout
-  before_filter :menu_main
 
   def index
     @jurisprudences = Jurisprudence.order('created_at DESC').first(3)
@@ -9,16 +8,6 @@ class PagesController < ApplicationController
   def show
     @page = Page.find_by_slug(params[:slug]) || Page.find(params[:slug])
     render params[:slug] if controller_view_exists?(params[:slug])
-  end
-
-  def menu_main
-    @page = Page.find_by_slug(params['slug'])
-    if @page
-      @top_menu = @page.root.siblings.visible
-      @middle_menu = @page.ancestors.visible
-      @bottom_menu = @page.children.visible
-      @main_menu = @page.siblings.visible
-    end
   end
 
   private
