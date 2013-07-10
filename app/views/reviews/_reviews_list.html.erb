@@ -1,0 +1,19 @@
+<div class="row-fluid margin-bottom-20">
+  <div class="span8 feedback_container">
+    <div class="headline">
+      <h3>Отзывы</h3>
+    </div>
+    <div class="feedback">
+      <a class="hover-effect" href="#">
+        оставить отзыв <%= image_tag('/design/feedback_bubble.png') %>
+      </a>
+    </div>
+    <% @reviews.each do |review| %>
+      <blockquote class="hero-unify">
+        <p><%= review.content %></p>
+        <small>- <%= review.caption %></small>
+      </blockquote>
+    <% end if @reviews %>
+  </div>
+  <div class="span4"></div>
+</div>
