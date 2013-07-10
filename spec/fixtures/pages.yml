@@ -1,13 +1,8 @@
 index:
-  id: 1
   slug: index
+  name: Projects
+  content: <%= Faker::HTMLIpsum.fancy_string %>
 contacts:
-  id: 2
   slug: contacts
-doverie:
-  id: 3
-  slug: doverie
-vacansy:
-  id: 4
-  slug: vacansy
-  hidden: true
+  name: Contacts
+  content: <%= [Faker::Company.name, Faker::PhoneNumber.short_phone_number].join(', ') %>
