@@ -1,9 +1,20 @@
-<nav class="header-menu">
-    <%= render 'shared/menu/top' %>
-    <% if @page && @page != @page.root  %>
-      <div>
-        <%= render 'shared/menu/middle' %>
-        <%= render 'shared/menu/main' %>
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a><!-- /nav-collapse -->
+    <div class="nav-collapse collapse">
+      <%= render 'shared/menu/top' %>
+      <div class="search-open">
+        <div class="input-append">
+          <form>
+            <input type="text" class="span3" placeholder="Искать" />
+            <button type="submit" class="btn-u">Найти</button>
+          </form>
+        </div>
       </div>
-    <% end %>
-</nav>
+    </div>
+  </div>
+</div>
