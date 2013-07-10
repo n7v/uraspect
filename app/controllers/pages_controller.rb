@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   def index
     @jurisprudences = Jurisprudence.order('created_at DESC').first(3)
     @reviews = Review.order('created_at DESC').first(3)
+    @review = Review.new
   end
 
   def show

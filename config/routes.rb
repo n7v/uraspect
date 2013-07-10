@@ -14,4 +14,5 @@ Uraspect::Application.routes.draw do
 
   resources :pages
   resources :feedbacks, :only => :create
+  resources :reviews, :only => :create
 end
