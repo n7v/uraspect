@@ -1,5 +1,5 @@
 class Page < ActiveRecord::Base
-  attr_accessible :slug, :hidden, :seo_id, :seo_attributes, :layout, :parent_id
+  attr_accessible :slug, :hidden, :seo_id, :seo_attributes, :layout, :parent_id, :name, :content
 
   belongs_to :seo
   has_ancestry
