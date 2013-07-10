@@ -13,12 +13,11 @@ gem 'mini_magick'
 gem 'friendly_id'
 gem 'ckeditor'
 gem 'noty-rails'
-gem 'route_translator'
-gem 'i18n-js', :github => 'fnando/i18n-js'
 gem 'globalize3'
 gem 'ActiveAdmin-Globalize3-inputs'
 gem 'ancestry'
 gem 'email_validator', require: 'email_validator/strict'
+gem 'truncate_html'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
