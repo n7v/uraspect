@@ -1,37 +1,15 @@
-<div class="navbar">
-  <div class="navbar-inner">
-    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </a><!-- /nav-collapse -->
-    <div class="nav-collapse collapse">
-			<nav class="header-menu">
-				<ul>
-					<% Page.roots.visible.each do |page| %>
-						<li class="#{class_attr} menu_item">
-							<%= link_to content_tag(:span, page.name), slug_path(page) %>
-							<ul class="nested_links hidden">
-								<% page.children.each do |child| %>
-									<%= link_to content_tag(:span, child.name), slug_path(child) %>
-								<% end %>  
-							</ul>
-						</li>
-					<% end %>
+<nav class="header-menu">
+	<ul>
+		<% Page.roots.visible.each do |page| %>
+			<li class="#{class_attr} menu_item">
+				<%= link_to content_tag(:span, page.name), slug_path(page) %>
+				<ul class="nested_links hidden">
+				  <% page.children.each do |child| %>
+				  	<%= link_to content_tag(:span, child.name), slug_path(child) %>
+				  <% end %>  
 				</ul>
-			</nav>
-      <div class="search-open">
-        <div class="input-append">
-          <form>
-            <input type="text" class="span3" placeholder="Искать" />
-            <button type="submit" class="btn-u">Найти</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
+			</li>
+		<% end %>
+	</ul>
+</nav>
 
