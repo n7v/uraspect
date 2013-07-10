@@ -12,3 +12,6 @@ $(document).ready ->
   $("#show-send-review_form").bind "click", (event) ->
     event.preventDefault()
     $("#send-review-form-wrapper").removeClass "hidden"
+
+  if $("#send-review-form-wrapper .form_error").length > 0
+    $("#send-review-form-wrapper").removeClass "hidden"
