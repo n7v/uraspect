@@ -10,8 +10,10 @@ Uraspect::Application.routes.draw do
   ActiveAdmin.routes(self)
   get 'jurisprudences' => 'jurisprudences#index'
   get 'index' => 'pages#index'
+  get 'price_of_services' => 'pages#price_of_services'
   get ':slug' => 'pages#show', :as => :slug
-  
+
+
   get 'jurisprudences/:id' => 'jurisprudences#show'
 
   resources :pages 

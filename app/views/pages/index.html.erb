@@ -1,11 +1,11 @@
 <%= render 'shared/slider' %>
-<%= render 'jurisprudences/jurisprudences_list' %>
+<%= render 'jurisprudences/list' %>
 <div class="container">
 	<div class="row-fluid">
     	<div class="span4">
             <a class="service_link" href="#">
                 <div class="service clearfix">
-                    <div class="service_icon"><%= image_tag('/design/service_price.png') %></div>
+                    <div class="service_icon"><%= link_to image_tag('/design/service_price.png'), price_of_services_path %></div>
                     <div class="desc">
                         <div class="desc_header">
                             <h4>Стоимость<br/>услуг</h4>

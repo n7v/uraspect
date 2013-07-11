@@ -1,6 +1,6 @@
 class JurisprudencesController < ApplicationController
   def index
-    @jurisprudences = Jurisprudence.all
+    @jurisprudences = Jurisprudence.scoped
   end
 
   def show
