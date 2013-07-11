@@ -2,30 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="458cea01-1bc1-44d9-802f-bcb0844605f1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/img/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/img/bg-heading-blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/img/bg-heading-light.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/img/bg-heading-orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/img/bg-heading-red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/img/bg-heading.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/img/bg-text.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/img/bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/img/html5andcss3.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/css/parallax-slider.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/parallax-slider/parallax-slider.css.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/css/parallax_slider_for_ie9.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/parallax-slider/parallax_slider_for_ie9.css.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/img/arrows.png" afterPath="$PROJECT_DIR$/vendor/assets/images/parallax-slider/arrows.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/js/jquery.cslider.js" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/jquery.cslider.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/js/modernizr.js" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/modernizr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/effects.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/img-hover-effect.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/README.mdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/basic-carousel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/carousel-min-max.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/css/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/css/shCore.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/css/shThemeDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-medium/eot/1110FC_0.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-medium/svg/1110FC_0.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-medium/svg/svg_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-medium/ttf/1110FC_0.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-medium/woff/1110FC_0.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-regular/eot/11014B_0.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-regular/svg/11014B_0.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-regular/svg/svg_test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-regular/ttf/11014B_0.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-regular/woff/11014B_0.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-semibold/eot/style_169898.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-semibold/svg/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-semibold/svg/style_169898.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-semibold/ttf/style_169898.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/fonts/webfonts/geo-semibold/woff/style_169898.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/images/kitchen_adventurer_caramel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/images/kitchen_adventurer_cheesecake_brownie.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/images/kitchen_adventurer_donut.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/images/kitchen_adventurer_lemon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/js/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/js/froogaloop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/js/jquery.easing.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/js/jquery.fitvid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/js/jquery.mousewheel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/js/modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/js/shBrushCss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/js/shBrushJScript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/js/shBrushXml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/js/shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/thumbnail-controlnav.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/thumbnail-slider.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/demo/video.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/jquery.flexslider-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/jquery.mCustomScrollbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/jquery.mousewheel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/jquery.mCustomScrollbar.css" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/flexslider.css" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/flexslider/flexslider.css.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/images/bg_direction_nav.png" afterPath="$PROJECT_DIR$/vendor/assets/images/flexslider/bg_direction_nav.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/flexslider/images/bg_direction_nav1.png" afterPath="$PROJECT_DIR$/vendor/assets/images/flexslider/bg_direction_nav1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/jquery.cslider.js" afterPath="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/jquery.cslider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/assets/stylesheets/parallax-slider/parallax-slider.css.scss" afterPath="$PROJECT_DIR$/vendor/assets/stylesheets/parallax-slider/parallax-slider.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="uraspect.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="458cea01-1bc1-44d9-802f-bcb0844605f1" time="1373526733574" ignored="false" />
-    <file path="/a.dummy" changelist="458cea01-1bc1-44d9-802f-bcb0844605f1" time="1373535743100" ignored="false" />
+    <file path="/a.dummy" changelist="458cea01-1bc1-44d9-802f-bcb0844605f1" time="1373539374252" ignored="false" />
     <file path="/_slider.html.erb" changelist="458cea01-1bc1-44d9-802f-bcb0844605f1" time="1373455135068" ignored="false" />
     <file path="/parallax-slider.css" changelist="458cea01-1bc1-44d9-802f-bcb0844605f1" time="1373455757503" ignored="false" />
     <file path="/parallax-slider.css.scss" changelist="458cea01-1bc1-44d9-802f-bcb0844605f1" time="1373537018987" ignored="false" />
@@ -35,7 +71,7 @@
     <file path="/back-to-top.js" changelist="458cea01-1bc1-44d9-802f-bcb0844605f1" time="1373466207124" ignored="false" />
     <file path="/_header.html.erb" changelist="458cea01-1bc1-44d9-802f-bcb0844605f1" time="1373467198534" ignored="false" />
     <file path="/header1.css.scss" changelist="458cea01-1bc1-44d9-802f-bcb0844605f1" time="1373468283878" ignored="false" />
-    <file path="/application.css" changelist="458cea01-1bc1-44d9-802f-bcb0844605f1" time="1373533991296" ignored="false" />
+    <file path="/application.css" changelist="458cea01-1bc1-44d9-802f-bcb0844605f1" time="1373538746604" ignored="false" />
     <file path="/application.js" changelist="458cea01-1bc1-44d9-802f-bcb0844605f1" time="1373537596552" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,37 +92,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="flexslider.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/flexslider/flexslider.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="29" selection-start="2365" selection-end="2365" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="parallax-slider.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/parallax-slider/parallax-slider.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="172" column="39" selection-start="3414" selection-end="3414" vertical-scroll-proportion="0.0">
+            <state line="208" column="15" selection-start="4140" selection-end="4140" vertical-scroll-proportion="-7.96">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parallax_slider_for_ie9.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/parallax-slider/parallax_slider_for_ie9.css.scss">
+      <file leaf-file-name="_slider.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_slider.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="1" column="13" selection-start="40" selection-end="40" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="12" selection-start="861" selection-end="876" vertical-scroll-proportion="0.0">
+            <state line="12" column="25" selection-start="238" selection-end="238" vertical-scroll-proportion="0.4774536">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="jquery.cslider.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/jquery.cslider.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="23" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="38" selection-start="596" selection-end="596" vertical-scroll-proportion="0.35">
+            <state line="14" column="23" selection-start="596" selection-end="596" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
@@ -95,7 +149,16 @@
       <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="722" selection-end="765" vertical-scroll-proportion="0.0">
+            <state line="19" column="18" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="698" column="15" selection-start="12804" selection-end="12804" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,8 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/themes/red.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/themes/default.css.scss" />
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/flexslider.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/pages.css.scss" />
         <option value="$PROJECT_DIR$/app/views/shared/_header.html.erb" />
@@ -131,10 +192,12 @@
         <option value="$PROJECT_DIR$/app/views/shared/_slider.html.erb" />
         <option value="$PROJECT_DIR$/vendor/assets/javascripts/back-to-top.js" />
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/paralax-slider/parallax-slider.css.scss" />
-        <option value="$PROJECT_DIR$/vendor/assets/stylesheets/parallax-slider/parallax-slider.css.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/vendor/assets/stylesheets/flexslider/flexslider.css.scss" />
+        <option value="$PROJECT_DIR$/vendor/assets/stylesheets/parallax-slider/parallax-slider.css.scss" />
+        <option value="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/jquery.cslider.js" />
       </list>
     </option>
   </component>
@@ -302,6 +365,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flexslider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uraspect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uraspect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -325,6 +414,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flexslider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uraspect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uraspect" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -354,7 +469,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="parallax-slider" />
+              <option name="myItemId" value="flexslider" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -608,11 +723,11 @@
       <recent name="$PROJECT_DIR$/vendor/assets/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vendor/assets/stylesheets/flexslider" />
+      <recent name="$PROJECT_DIR$/vendor/assets/images/flexslider" />
       <recent name="$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider" />
       <recent name="$PROJECT_DIR$/vendor/assets/images/parallax-slider" />
       <recent name="$PROJECT_DIR$/vendor/assets" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/app/assets/images" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: uraspect">
@@ -933,10 +1048,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.4996016" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25338647" sideWeight="0.6369231" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25338647" sideWeight="0.67230767" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5003984" order="7" side_tool="true" content_ui="tabs" />
@@ -1013,23 +1128,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/themes/default.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/design_style.css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="3" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1041,16 +1142,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+    <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/respond.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="722" selection-end="765" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="12" selection-start="861" selection-end="876" vertical-scroll-proportion="0.0">
+        <state line="19" column="18" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="23" selection-start="596" selection-end="596" vertical-scroll-proportion="-8.75">
           <folding />
         </state>
       </provider>
@@ -1062,16 +1170,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/parallax-slider/parallax-slider.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="172" column="39" selection-start="3414" selection-end="3414" vertical-scroll-proportion="0.0">
+        <state line="18" column="40" selection-start="778" selection-end="778" vertical-scroll-proportion="0.43269232">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/vendor/assets/images/flexslider/bg_direction_nav.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/images/flexslider/bg_direction_nav1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/images/parallax-slider/arrows.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/flexslider/flexslider.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="596" selection-end="596" vertical-scroll-proportion="0.35">
+        <state line="53" column="29" selection-start="2365" selection-end="2365" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/stylesheets/parallax-slider/parallax-slider.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="208" column="15" selection-start="4140" selection-end="4140" vertical-scroll-proportion="-7.96">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/style.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="698" column="15" selection-start="12804" selection-end="12804" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_slider.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="13" selection-start="40" selection-end="40" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/assets/javascripts/parallax-slider/jquery.cslider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="23" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="238" selection-end="238" vertical-scroll-proportion="0.4774536">
           <folding />
         </state>
       </provider>
