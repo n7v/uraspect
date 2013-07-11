@@ -4,7 +4,7 @@ class JurisprudencesController < ApplicationController
   end
 
   def show
-    @jurisprudence = Jurisprudence.find_by_id(params[:id]) || Jurisprudence.find(params[:id])
+    @jurisprudence = Jurisprudence.find_by_id(params[:id])
   end
 
 end
