@@ -5,7 +5,7 @@
   </div>
   <ul class="thumbnails">
   	<% @jurisprudences.each do |jurisprudence| %>
-    	<%= render 'jurisprudences/list_item' %>
+    	<%= render 'jurisprudences/list_item', jurisprudence: jurisprudence %>
 		<% end %>
   </ul>
 </div>
