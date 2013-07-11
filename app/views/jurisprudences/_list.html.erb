@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="headline">
+    <h3>Наша судебная практика</h3>
+    <%= link_to 'Вся судебная практика', jurisprudences_path %>
+  </div>
+  <ul class="thumbnails">
+  	<% @jurisprudences.each do |jurisprudence| %>
+    	<%= render 'jurisprudences/list_item', jurisprudence: jurisprudence %>
+		<% end %>
+  </ul>
+</div>
