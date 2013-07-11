@@ -4,6 +4,8 @@
     <%= link_to 'Вся судебная практика', jurisprudences_path %>
   </div>
   <ul class="thumbnails">
-    <%= render 'jurisprudences/list_item' %>
+  	<% @jurisprudences.each do |jurisprudence| %>
+    	<%= render 'jurisprudences/list_item' %>
+		<% end %>
   </ul>
 </div>
