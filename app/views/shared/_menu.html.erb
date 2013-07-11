@@ -1,12 +1,31 @@
 <div class="navbar">
   <div class="navbar-inner">
-    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </a><!-- /nav-collapse -->
     <div class="nav-collapse collapse">
-      <%= render 'shared/menu/top' %>
+      <ul class="nav top-2">
+        <% Page.roots.visible.each do |page| %>
+          <li>
+            <% if page.children.any? %>
+              <%= link_to '#', :class => 'dropdown-toggle', :'data-toggle' => 'dropdown' do %>
+                <%= raw(page.name) %>
+                <b class='caret'></b>
+              <% end %>
+
+              <ul class="dropdown-menu">
+                <% page.children.each do |child| %>
+                  <li>
+                    <%= link_to raw(child.name), slug_path(child) %>
+                  </li>
+                <% end %>
+              </ul>
+              <b class="caret-out"></b>
+            <% else %>
+              <%= link_to raw(page.name), slug_path(page) %>
+            <% end %>
+          </li>
+        <% end %>
+
+        <li class="search_icon"><a class="search"><i class="icon-search search-btn"></i></a></li>
+      </ul>
       <div class="search-open">
         <div class="input-append">
           <form>
