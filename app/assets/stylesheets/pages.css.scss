@@ -75,8 +75,6 @@ a.project-close {background:url(close.png); width:33px; height:33px; float:right
 .content {}
 .content h1 {font-size:26px;}
 
-.footer {padding:50px 0 20px 0; color:#888;}
-
 .fade { @include transition(opacity 0.5s linear); opacity:0;}
 
 @media (max-width: 979px) {

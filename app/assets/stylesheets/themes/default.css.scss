@@ -1,94 +1,108 @@
 a:focus, 
 a:hover, 
 a:active {
-	color: #3498db;
+	color: #d8774d;
 }
 
 .color-green {
-	color: #3498db;
+	color: #d8774d;
 }
 
 a.read-more:hover { 
-	color:#3498db; 
+	color:#d8774d; 
 }
 
 .linked:hover {
-	color:#3498db;
+	color:#d8774d;
 }
 
 /*Slider
 ------------------------------------*/
 .da-slide h2 i {
-	background:url(../../plugins/parallax-slider/img/bg-heading-blue.png) repeat;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(211,173,139,0.8);
+    line-height: 60px;
+}
+
+.da-slide p i {
+    background-color: rgba(128,105,87,0.9);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 33px;
 }
 
 /*Purchase
 ------------------------------------*/
 .purchase a.btn-buy {
-	background:#3498db;
-	text-shadow:0 1px 0 #2980b9;
+	background:#d8774d;
+	text-shadow:0 1px 0 #51a00b;		
 }
 .purchase a.btn-buy:hover {
-	background:#2980b9;
+	background:#68af28;
 } 
 
 /*Buttons
 ------------------------------------*/
 .btn-u {
-	background: #3498db;
+	background: #d8774d;
 }
 
 .btn-u:hover {
-	background: #2980b9;
+	background: #c66a48;
 }
 
 /*Service
 ------------------------------------*/
 .service i {
-	color:#3498db;	
+	color:#d8774d;	
 }
 
 /*Welcome Block*/
 .servive-block .span4 h4 a:hover {
-	color:#3498db;
+	color:#d8774d;
 }
 
 .servive-block .span4:hover h4,
 .servive-block .span4:hover i {
-	color:#3498db;
+	color:#d8774d;
 }
 .servive-block-in .span4 i {
-	color:#3498db;
+	color:#d8774d;
 }
 
 /*Service Blocks*/
 .service-alternative .service:hover { 
-	background:#3498db;
+	background:#d8774d;
 } 
 
 /*Thumbnail (Recent Work)
 ------------------------------------*/
 .thumbnail-style h3 a:hover {
-	color:#3498db;
+	color:#d8774d;
 }
 
 .thumbnail-style a.btn-more {
-	background:#3498db;
+	background:#d8774d;
 }
 .thumbnail-style a.btn-more:hover {
-	box-shadow:0 0 0 2px #2980b9;
+	box-shadow:0 0 0 2px #377500;
 }
 
 /*Carousel (Recent Work)*/
 .recent-work a:hover span {
-	border-bottom:solid 2px #3498db;
+	border-bottom:solid 2px #d8774d;
 }
 
 .bx-wrapper .bx-prev {
-	background-image: url(../../plugins/bxslider/images/controls-blue.png);
+	background-image: image-url('bxslider/controls.png');
 }
 .bx-wrapper .bx-next {
-	background-image: url(../../plugins/bxslider/images/controls-blue.png);
+	background-image: image-url('bxslider/controls.png');
 }
 
 /*Typography
@@ -96,22 +110,22 @@ a.read-more:hover {
 /*Heading*/
 .headline h3, 
 .headline h4 {
-	border-bottom:2px solid #3498db;
+	border-bottom:2px solid #d8774d;
 }
 
 /*Blockquote*/
 blockquote:hover {
-	border-left-color:#3498db; 
+	border-left-color:#d8774d; 
 }
 
 .hero {
-	border-left-color: #3498db;
+	border-left-color: #d8774d;
 }
 
 /*Carousel
 ------------------------------------*/
 .carousel-arrow a.carousel-control:hover {
-	color: #3498db;
+	color: #d8774d;
 }
 
 /*Footer
@@ -120,27 +134,27 @@ blockquote:hover {
 .copyright a,
 .footer a:hover,
 .copyright a:hover {
-	color: #3498db;
+	color: #d8774d;
 }
 
 /*Footer Blog*/
 .footer .dl-horizontal a:hover {
-	color:#3498db !important;
+	color:#d8774d !important;
 }
 
 
 /*Blog Posts
 ------------------------------------*/
 .posts .dl-horizontal:hover { 
-	border-right:solid 2px #3498db;
+	border-right:solid 2px #d8774d;
 }
 .posts .dl-horizontal a:hover { 
-	color:#3498db; 
+	color:#d8774d; 
 }
 .posts .dl-horizontal:hover dt img,
 .posts .dl-horizontal:hover dd a { 
-	color:#3498db;
-	border-color:#3498db !important;
+	color:#d8774d;
+	border-color:#d8774d !important;
 }
 
 /*Tabs
@@ -150,99 +164,98 @@ blockquote:hover {
 .nav-tabs > .active > a, 
 .nav-tabs > .active > a:hover, 
 .nav-tabs > .active > a:focus { 
-	background:#3498db; 
+	background:#d8774d; 
 }
-
 .nav-tabs > li > a:hover { 
-	background:#3498db; 
+	background:#d8774d; 
 }
 .tab-content { 
-	border-top:solid 2px #3498db; 
+	border-top:solid 2px #d8774d; 
 }
 
 /*Accardion
 ------------------------------------*/
 .acc-home a.active,
 .acc-home a.accordion-toggle:hover { 
-	color:#3498db; 
+	color:#d8774d; 
 }
 .acc-home .collapse.in { 
-	border-bottom:solid 1px #3498db; 
+	border-bottom:solid 1px #d8774d; 
 }
 
 /*Testimonials
 ------------------------------------*/
 .testimonal-arrow a {
-	color:#3498db;
+	color:#d8774d;
 }
 .testimonal-arrow a:hover {
-	background:#3498db !important;
+	background:#d8774d !important;
 }
 
 /*Breadcrumb
 ------------------------------------*/
 .breadcrumb li.active,
 .breadcrumb li a:hover {
-	color:#3498db;
+	color:#d8774d;
 }
 
 /*About Page
 ------------------------------------*/
 .team .thumbnail-style:hover h3 a {
-	color:#3498db !important;
+	color:#d8774d !important;
 }
 
 /*Social Icons*/
 .team ul li i:hover {
-	background:#3498db;
+	background:#d8774d;
 }	
 
 /*Pricing Page
 ------------------------------------*/
 /*Pricing Head*/
 .pricing:hover h4 {
-	color:#3498db;
+	color:#55c931;
 }
 
 .pricing-head h3 {
-	background:#3498db;
-	text-shadow:0 1px 0 #2980b9;
-	border-bottom:solid 1px #2980b9;
+	background:#55c931;
+	text-shadow:0 1px 0 #32a20f;
+	border-bottom:solid 1px #41b91c;
 }
 .pricing-head h4 {
 	color:#999;
-	background:#fcfcfc;
-	border-bottom:solid 1px #daf0ff;
+	background:#fbfef2;
+	border-bottom:solid 1px #f5f9e7;
 }
 	
 /*Pricing Content*/
 .pricing-content li {
-	border-bottom:solid 1px #daf0ff;
+	border-bottom:solid 1px #f5f9e7;
 }
 .pricing-content li i {
-	color:#3498db;
+	color:#d8774d;
 }
 
 /*Pricing Footer*/
 .pricing-footer a,
 .pricing-footer button {
-	background:#3498db;
-	text-shadow:0 1px 0 #2980b9;
-	border-bottom:solid 2px #2980b9;
+	background:#d8774d;
+	text-shadow:0 1px 0 #38b312;
+	border-bottom:solid 2px #41b91c;
 }
 .pricing-footer a:hover,
 .pricing-footer button:hover {
-	background:#2980b9;
+	background:#40ba1a;
 }
 
 /*Priceing Active*/
 .price-active h4 {
-	color:#3498db;
+	color:#55c931;
 }
 
 .no-space-pricing .price-active .pricing-head h4,
 .no-space-pricing .pricing:hover .pricing-head h4 {
-	color:#3498db;
+	color:#55c931;
 }
 
 /*Right Sidebar
@@ -251,81 +264,81 @@ blockquote:hover {
 .who li i,
 .who li:hover i, 
 .who li:hover a { 
-	color:#3498db; 
+	color:#d8774d; 
 }
 
 /*Privacy Page
 ------------------------------------*/
 .privacy a:hover {
-	color:#3498db; 
+	color:#d8774d; 
 }
 
 /*Portfolio Page
 ------------------------------------*/
 .sort li a:hover { 
-	color: #3498db; 
-	border-bottom: 1px dotted #3498db; 
+	color: #d8774d; 
+	border-bottom: 1px dotted #d8774d; 
 }
 .sort li a.selected { 
-	color: #3498db; 
-	border-bottom: 1px solid #3498db;
+	color: #d8774d; 
+	border-bottom: 1px solid #d8774d;
 }
 
 .view a.info:hover {
-	background: #3498db;
+	background: #d8774d;
 }
 
 /*Blog Page
 ------------------------------------*/
 .blog h3 {
-	color:#3498db;
+	color:#d8774d;
 }
 .blog li a:hover {
-	color:#3498db;
+	color:#d8774d;
 }
 
 /*Blog Tags*/
 ul.blog-tags a:hover,
 ul.blog-tags a:hover i {
-	color:#3498db;
+	color:#d8774d;
 }
 
 /*Blog Ads*/
 .blog-ads li img:hover {
-	box-shadow:0 0 0 4px #3498db;
+	box-shadow:0 0 0 4px #d8774d;
 }
 
 /*Blog Latest Tweets*/
 .blog-twitter p a {
-	color:#3498db;
+	color:#d8774d;
 }
 
 /*Blog Item Page
 ------------------------------------*/
 .blog-item h4.media-heading span a {
-	color:#3498db;
+	color:#d8774d;
 }
 
 /*Coming Soon Page
 ------------------------------------*/
 .coming-soon-border {
-	border-top: solid 3px #3498db;
+	border-top: solid 3px #d8774d;
 }
 
 /*Search Page
 ------------------------------------*/
 .booking-blocks p a {
-	color: #3498db;
+	color: #d8774d;
 }
 
 /*Icons Page
 ------------------------------------*/
 .icon-page li:hover { 
-	color:#3498db;
+	color:#d8774d;
 }
 
 /*Glyphicons*/
 .glyphicons-demo a:hover {
-	color: #3498db;
+	color: #d8774d;
 	text-decoration: none;
 }

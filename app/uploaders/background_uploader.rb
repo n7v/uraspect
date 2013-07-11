@@ -29,7 +29,7 @@ class BackgroundUploader < CarrierWave::Uploader::Base
   #   # For Rails 3.1+ asset pipeline compatibility:
   #   # asset_path("fallback/" + [version_name, "default.png"].compact.join('_'))
   #
-  #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
+  #   "/flexslider/fallback/" + [version_name, "default.png"].compact.join('_')
   # end
 
   # Process files as they are uploaded:
@@ -45,7 +45,7 @@ class BackgroundUploader < CarrierWave::Uploader::Base
   # end
 
   # Add a white list of extensions which are allowed to be uploaded.
-  # For images you might use something like this:
+  # For flexslider you might use something like this:
   # def extension_white_list
   #   %w(jpg jpeg gif png)
   # end

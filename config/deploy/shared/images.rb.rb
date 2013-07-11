@@ -1,6 +1,6 @@
 
-namespace :images do
-  desc 'Sync images to local workstation'
+namespace :flexslider do
+  desc 'Sync flexslider to local workstation'
   task :load_from_server, :roles => :app do
     find_servers_for_task(current_task).each do |current_server|
       remote_dir = "#{shared_path}/system"

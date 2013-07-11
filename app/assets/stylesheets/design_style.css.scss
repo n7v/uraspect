@@ -12,24 +12,13 @@
     background:none;
 }
 
-.dropdown-menu {
-    padding:0;
-    border:none;
-    margin-top:-2px;
-    min-width:200px;
-    border-radius:0;
-    border-top:solid 2px #d8774d;
-    border-bottom:solid 2px #687074;
-    z-index: 9999 !important;
-}
 .navbar .btn-navbar {
-    float: left;
+
 }
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-    color:#d8774d;
-    border-bottom:solid 2px #d8774d;
+
 }
 
 .navbar .nav > .active > a,

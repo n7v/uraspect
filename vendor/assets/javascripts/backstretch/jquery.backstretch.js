@@ -11,7 +11,7 @@
   $.fn.backstretch = function (images, options) {
     // We need at least one image
     if (images === undefined || images.length === 0) {
-      $.error("No images were supplied for Backstretch");
+      $.error("No flexslider were supplied for Backstretch");
     }
 
     /*
@@ -104,9 +104,9 @@
      */
     this.images = $.isArray(images) ? images : [images];
 
-    // Preload images
+    // Preload flexslider
     $.each(this.images, function () {
-      $('<img />')[0].src = this;
+      $('<parallax-slider />')[0].src = this;
     });    
 
     // Convenience reference to know if the container is body.
@@ -187,7 +187,7 @@
             }
 
             this.$wrap.css({width: rootWidth, height: rootHeight})
-                      .find('img:not(.deleteable)').css({width: bgWidth, height: bgHeight}).css(bgCSS);
+                      .find('parallax-slider:not(.deleteable)').css({width: bgWidth, height: bgHeight}).css(bgCSS);
         } catch(err) {
             // IE7 seems to trigger resize before the image is loaded.
             // This try/catch block is a hack to let it fail gracefully.
@@ -207,7 +207,7 @@
 
         // Vars
         var self = this
-          , oldImage = self.$wrap.find('img').addClass('deleteable')
+          , oldImage = self.$wrap.find('parallax-slider').addClass('deleteable')
           , evt = $.Event('backstretch.show', {
               relatedTarget: self.$container[0]
             });
@@ -216,7 +216,7 @@
         clearInterval(self.interval);
 
         // New image
-        self.$img = $('<img />')
+        self.$img = $('<parallax-slider />')
                       .css(styles.img)
                       .bind('load', function (e) {
                         var imgWidth = this.width || $(e.target).width()
@@ -244,7 +244,7 @@
                       })
                       .appendTo(self.$wrap);
 
-        // Hack for IE img onload event
+        // Hack for IE parallax-slider onload event
         self.$img.attr('src', self.images[index]);
         return self;
       }

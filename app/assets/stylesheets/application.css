@@ -13,7 +13,7 @@
  *= require bootstrap/css/bootstrap
  *= require bootstrap/css/bootstrap-responsive.min
  *= require font-awesome/css/font-awesome
- *= require flexslider/flexslider
- *= require parallax-slider/css/parallax-slider
+ *= require flexslider
+ *= require parallax-slider
  *= require_tree .
  */

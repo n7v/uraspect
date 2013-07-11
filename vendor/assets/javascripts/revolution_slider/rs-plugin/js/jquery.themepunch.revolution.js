@@ -514,8 +514,8 @@
 							if (li.data('thumb') !=undefined)
 								var src= li.data('thumb')
 							else
-								var src=li.find("img:first").attr('src');
-							bullets.append('<div class="bullet thumb"><img src="'+src+'"></div>');
+								var src=li.find("parallax-slider:first").attr('src');
+							bullets.append('<div class="bullet thumb"><parallax-slider src="'+src+'"></div>');
 							var bullet= bullets.find('.bullet:first');
 				});
 			//bullets.append('<div style="clear:both"></div>');
@@ -670,7 +670,7 @@
 			var bullets = container.parent().find('.tp-bullets');
 
 			container.find('>ul:first >li').each(function(i) {
-							var src=container.find(">ul:first >li:eq("+i+") img:first").attr('src');
+							var src=container.find(">ul:first >li:eq("+i+") parallax-slider:first").attr('src');
 							bullets.append('<div class="bullet"></div>');
 							var bullet= bullets.find('.bullet:first');
 
@@ -1087,7 +1087,7 @@
 				}
 			});
 
-			container.find('>ul:first >li >img').each(function(j) {
+			container.find('>ul:first >li >parallax-slider').each(function(j) {
 
 				var img=$(this);
 				img.addClass('defaultimg');
@@ -1128,7 +1128,7 @@
 					var off=0-opt.slotw;
 
 				for (var i=0;i<opt.slots;i++)
-					sh.append('<div class="slot" style="position:absolute;top:'+(0+fullyoff)+'px;left:'+(fulloff+i*opt.slotw)+'px;overflow:hidden;width:'+opt.slotw+'px;height:'+h+'px"><div class="slotslide" style="position:absolute;top:0px;left:'+off+'px;width:'+opt.slotw+'px;height:'+h+'px;overflow:hidden;"><img style="background-color:'+bgcolor+';position:absolute;top:0px;left:'+(0-(i*opt.slotw))+'px;width:'+w+'px;height:'+h+'px" src="'+src+'"></div></div>');
+					sh.append('<div class="slot" style="position:absolute;top:'+(0+fullyoff)+'px;left:'+(fulloff+i*opt.slotw)+'px;overflow:hidden;width:'+opt.slotw+'px;height:'+h+'px"><div class="slotslide" style="position:absolute;top:0px;left:'+off+'px;width:'+opt.slotw+'px;height:'+h+'px;overflow:hidden;"><parallax-slider style="background-color:'+bgcolor+';position:absolute;top:0px;left:'+(0-(i*opt.slotw))+'px;width:'+w+'px;height:'+h+'px" src="'+src+'"></div></div>');
 
 		}
 
@@ -1169,7 +1169,7 @@
 												 'top:'+(off)+'px;'+
 												 'left:0px;width:'+w+'px;'+
 												 'height:'+opt.sloth+'px;'+
-												 'overflow:hidden;"><img style="position:absolute;'+
+												 'overflow:hidden;"><parallax-slider style="position:absolute;'+
 												 'background-color:'+bgcolor+';'+
 												 'top:'+(0-(i*opt.sloth))+'px;'+
 												 'left:0px;width:'+w+'px;'+
@@ -1245,7 +1245,7 @@
 											'height:'+basicsize+'px;'+
 											'overflow:hidden;">'+
 
-								  '<img style="position:absolute;'+
+								  '<parallax-slider style="position:absolute;'+
 											'top:'+(0-y)+'px;'+
 											'left:'+(0-x)+'px;'+
 											'width:'+w+'px;'+
@@ -1637,16 +1637,16 @@
 						nextsh.find('.slotslide').each(function(j) {
 							var ss=$(this);
 							ss.css({'opacity':0});
-							ss.find('img').css({'opacity':0});
+							ss.find('parallax-slider').css({'opacity':0});
 							if (opt.ie9)
-								ss.find('img').transition({'top':(Math.random()*opt.slotw-opt.slotw)+"px",'left':(Math.random()*opt.slotw-opt.slotw)+"px"},0);
+								ss.find('parallax-slider').transition({'top':(Math.random()*opt.slotw-opt.slotw)+"px",'left':(Math.random()*opt.slotw-opt.slotw)+"px"},0);
 							else
-								ss.find('img').transition({'top':(Math.random()*opt.slotw-opt.slotw)+"px",'left':(Math.random()*opt.slotw-opt.slotw)+"px", rotate:opt.rotate},0);
+								ss.find('parallax-slider').transition({'top':(Math.random()*opt.slotw-opt.slotw)+"px",'left':(Math.random()*opt.slotw-opt.slotw)+"px", rotate:opt.rotate},0);
 
 							var rand=Math.random()*1000+(masterspeed + 200);
 							if (j==(opt.slots*opt.slots)-1) rand=1500;
 
-									ss.find('img').transition({'opacity':1,'top':(0-ss.data('y'))+"px",'left':(0-ss.data('x'))+'px', rotate:0},rand);
+									ss.find('parallax-slider').transition({'opacity':1,'top':(0-ss.data('y'))+"px",'left':(0-ss.data('x'))+'px', rotate:0},rand);
 									ss.transition({'opacity':1},rand,function() {
 															if (j==(opt.slots*opt.slots)-1) {
 																removeSlots(container,opt);
@@ -1950,7 +1950,7 @@
 
 						// ALL OLD SLOTS SHOULD BE SLIDED TO THE RIGHT
 						actsh.find('.slotslide').each(function() {
-							var ss=$(this).find('img');
+							var ss=$(this).find('parallax-slider');
 
 									ss.transition({'left':(0-opt.slotw/2)+'px',
 												   'top':(0-opt.height/2)+'px',
@@ -1972,7 +1972,7 @@
 						// ALL NEW SLOTS SHOULD BE SLIDED FROM THE LEFT TO THE RIGHT //
 						///////////////////////////////////////////////////////////////
 						nextsh.find('.slotslide').each(function(i) {
-							var ss=$(this).find('img');
+							var ss=$(this).find('parallax-slider');
 
 									if (opt.ie9)
 										ss.transition({'left':(0)+'px','top':(0)+'px',opacity:0},0);
@@ -2017,7 +2017,7 @@
 
 						// ALL OLD SLOTS SHOULD BE SLIDED TO THE RIGHT
 						actsh.find('.slotslide').each(function() {
-							var ss=$(this).find('img');
+							var ss=$(this).find('parallax-slider');
 
 									ss.transition({'left':(0-opt.width/2)+'px',
 												   'top':(0-opt.sloth/2)+'px',
@@ -2039,7 +2039,7 @@
 						// ALL NEW SLOTS SHOULD BE SLIDED FROM THE LEFT TO THE RIGHT //
 						///////////////////////////////////////////////////////////////
 						nextsh.find('.slotslide').each(function(i) {
-							var ss=$(this).find('img');
+							var ss=$(this).find('parallax-slider');
 									if (opt.ie9)
 										ss.transition({'left':(0)+'px','top':(0)+'px',opacity:0},0);
 									else
@@ -2354,7 +2354,7 @@
 								nextsh.find('.defaultimg').css({'opacity':1});
 								actsh.find('.defaultimg').css({'opacity':0});
 								if (actli.find('.tp-half-one').length>0)  {
-									actli.find('.tp-half-one >img, .tp-half-one >div').unwrap();
+									actli.find('.tp-half-one >parallax-slider, .tp-half-one >div').unwrap();
 
 								}
 								actli.find('.tp-half-two').remove();
@@ -2972,8 +2972,8 @@
 										   var imw =0;
 										   var imh = 0;
 
-													if (nextcaption.find('img').length>0) {
-														var im = nextcaption.find('img');
+													if (nextcaption.find('parallax-slider').length>0) {
+														var im = nextcaption.find('parallax-slider');
 														if (im.data('ww') == undefined) im.data('ww',im.width());
 														if (im.data('hh') == undefined) im.data('hh',im.height());
 
