@@ -15,5 +15,12 @@
  *= require font-awesome/css/font-awesome
  *= require flexslider/flexslider
  *= require parallax-slider/css/parallax-slider
+
+ *= require style
+ *= require headers/header1
+ *= require style_responsive
+ *= require themes/default
+ *= require design_style
+ *= require menu_style
  *= require_tree .
  */

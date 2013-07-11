@@ -1,0 +1,73 @@
+                           roboto            /robots.txt                                  Roboto::Engine
+                             root            /                                            pages#index
+                         ckeditor            /ckeditor                                    Ckeditor::Engine
+           new_admin_user_session GET        /admin/login(.:format)                       active_admin/devise/sessions#new
+               admin_user_session POST       /admin/login(.:format)                       active_admin/devise/sessions#create
+       destroy_admin_user_session DELETE|GET /admin/logout(.:format)                      active_admin/devise/sessions#destroy
+              admin_user_password POST       /admin/password(.:format)                    active_admin/devise/passwords#create
+          new_admin_user_password GET        /admin/password/new(.:format)                active_admin/devise/passwords#new
+         edit_admin_user_password GET        /admin/password/edit(.:format)               active_admin/devise/passwords#edit
+                                  PUT        /admin/password(.:format)                    active_admin/devise/passwords#update
+                       admin_root            /admin(.:format)                             admin/dashboard#index
+     batch_action_admin_feedbacks POST       /admin/feedbacks/batch_action(.:format)      admin/feedbacks#batch_action
+                  admin_feedbacks GET        /admin/feedbacks(.:format)                   admin/feedbacks#index
+                                  POST       /admin/feedbacks(.:format)                   admin/feedbacks#create
+               new_admin_feedback GET        /admin/feedbacks/new(.:format)               admin/feedbacks#new
+              edit_admin_feedback GET        /admin/feedbacks/:id/edit(.:format)          admin/feedbacks#edit
+                   admin_feedback GET        /admin/feedbacks/:id(.:format)               admin/feedbacks#show
+                                  PUT        /admin/feedbacks/:id(.:format)               admin/feedbacks#update
+                                  DELETE     /admin/feedbacks/:id(.:format)               admin/feedbacks#destroy
+         batch_action_admin_pages POST       /admin/pages/batch_action(.:format)          admin/pages#batch_action
+                      admin_pages GET        /admin/pages(.:format)                       admin/pages#index
+                                  POST       /admin/pages(.:format)                       admin/pages#create
+                   new_admin_page GET        /admin/pages/new(.:format)                   admin/pages#new
+                  edit_admin_page GET        /admin/pages/:id/edit(.:format)              admin/pages#edit
+                       admin_page GET        /admin/pages/:id(.:format)                   admin/pages#show
+                                  PUT        /admin/pages/:id(.:format)                   admin/pages#update
+                                  DELETE     /admin/pages/:id(.:format)                   admin/pages#destroy
+batch_action_admin_jurisprudences POST       /admin/jurisprudences/batch_action(.:format) admin/jurisprudences#batch_action
+             admin_jurisprudences GET        /admin/jurisprudences(.:format)              admin/jurisprudences#index
+                                  POST       /admin/jurisprudences(.:format)              admin/jurisprudences#create
+          new_admin_jurisprudence GET        /admin/jurisprudences/new(.:format)          admin/jurisprudences#new
+         edit_admin_jurisprudence GET        /admin/jurisprudences/:id/edit(.:format)     admin/jurisprudences#edit
+              admin_jurisprudence GET        /admin/jurisprudences/:id(.:format)          admin/jurisprudences#show
+                                  PUT        /admin/jurisprudences/:id(.:format)          admin/jurisprudences#update
+                                  DELETE     /admin/jurisprudences/:id(.:format)          admin/jurisprudences#destroy
+   batch_action_admin_admin_users POST       /admin/admin_users/batch_action(.:format)    admin/admin_users#batch_action
+                admin_admin_users GET        /admin/admin_users(.:format)                 admin/admin_users#index
+                                  POST       /admin/admin_users(.:format)                 admin/admin_users#create
+             new_admin_admin_user GET        /admin/admin_users/new(.:format)             admin/admin_users#new
+            edit_admin_admin_user GET        /admin/admin_users/:id/edit(.:format)        admin/admin_users#edit
+                 admin_admin_user GET        /admin/admin_users/:id(.:format)             admin/admin_users#show
+                                  PUT        /admin/admin_users/:id(.:format)             admin/admin_users#update
+                                  DELETE     /admin/admin_users/:id(.:format)             admin/admin_users#destroy
+                  admin_dashboard GET        /admin/dashboard(.:format)                   admin/dashboard#index
+      batch_action_admin_comments POST       /admin/comments/batch_action(.:format)       admin/comments#batch_action
+                   admin_comments GET        /admin/comments(.:format)                    admin/comments#index
+                                  POST       /admin/comments(.:format)                    admin/comments#create
+                    admin_comment GET        /admin/comments/:id(.:format)                admin/comments#show
+                            index GET        /index(.:format)                             pages#index
+                             slug GET        /:slug(.:format)                             pages#show
+                            pages GET        /pages(.:format)                             pages#index
+                                  POST       /pages(.:format)                             pages#create
+                         new_page GET        /pages/new(.:format)                         pages#new
+                        edit_page GET        /pages/:id/edit(.:format)                    pages#edit
+                             page GET        /pages/:id(.:format)                         pages#show
+                                  PUT        /pages/:id(.:format)                         pages#update
+                                  DELETE     /pages/:id(.:format)                         pages#destroy
+                        feedbacks POST       /feedbacks(.:format)                         feedbacks#create
+                     rails_routes GET        /rails/routes(.:format)                      sextant/routes#index
+                   sextant_engine            /sextant                                     Sextant::Engine
+
+Routes for Roboto::Engine:
+ GET / roboto/Robots#show
+
+Routes for Ckeditor::Engine:
+        pictures GET    /pictures(.:format)             ckeditor/pictures#index
+                 POST   /pictures(.:format)             ckeditor/pictures#create
+         picture DELETE /pictures/:id(.:format)         ckeditor/pictures#destroy
+attachment_files GET    /attachment_files(.:format)     ckeditor/attachment_files#index
+                 POST   /attachment_files(.:format)     ckeditor/attachment_files#create
+ attachment_file DELETE /attachment_files/:id(.:format) ckeditor/attachment_files#destroy
+
+Routes for Sextant::Engine:
