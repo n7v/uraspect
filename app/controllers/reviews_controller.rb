@@ -3,6 +3,7 @@ class ReviewsController < ApplicationController
   def create
     @review = Review.new(params[:review])
     if @review.save
+      flash[:notice] = "Ваш отзыв отправлен на модерацию"
       redirect_to :root
     else
       @jurisprudences = Jurisprudence.order('created_at DESC').first(3)

@@ -29,5 +29,3 @@ And /^I select link "(.*?)" from menu$/ do |name|
   	$("a[href='/#{p.slug}']").trigger('mouseover');
   }
 end
- 
-
