@@ -381,18 +381,18 @@ blockquote:hover {
 
 /*Footer*/
 .footer {
-  margin-top:40px;
-  padding:20px 10px;
-  color:#dadada;
-  background-color: #fff;
+	margin-top:40px;
+	padding:20px 10px;
+	background:#585f69;
+	color:#dadada;
 }
 .footer h1,
 .footer h2,
 .footer h3,
 .footer h4,
 .footer h5 {
-  text-shadow:none;
-  font-weight:normal !important;
+	text-shadow:none;
+	font-weight:normal !important;
 }
 .footer p,
 .footer a {
@@ -452,15 +452,13 @@ blockquote:hover {
 
 /*Copyright*/
 .copyright {
-  font-size:12px;
-  padding:5px 10px;
-  background-color: #ffffff;
-  border-top: none;
+	font-size:12px;
+	padding:5px 10px;
+	background:#3e4753;
+	border-top:solid 1px #777;
 }
 .copyright p {
-  font-size: 12px;
-  font-family:Verdana,Geneva,Kalimati,sans-serif;
-  color: #555;
+	color:#dadada;
 }
 .copyright a {
 	margin:0 5px;

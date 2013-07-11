@@ -18,7 +18,7 @@ class CkeditorAttachmentFileUploader < CarrierWave::Uploader::Base
 
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url
-  #   "/flexslider/fallback/" + [version_name, "default.png"].compact.join('_')
+  #   "/images/fallback/" + [version_name, "default.png"].compact.join('_')
   # end
 
   # Process files as they are uploaded:
@@ -29,7 +29,7 @@ class CkeditorAttachmentFileUploader < CarrierWave::Uploader::Base
   # end
 
   # Add a white list of extensions which are allowed to be uploaded.
-  # For flexslider you might use something like this:
+  # For images you might use something like this:
   def extension_white_list
     Ckeditor.attachment_file_types
   end

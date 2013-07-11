@@ -28,7 +28,7 @@
 				var href;
 
 				if (item.element) {
-					href = $(item.element).find('parallax-slider').attr('src');
+					href = $(item.element).find('img').attr('src');
 				}
 
 				if (!href && item.type === 'image' && item.href) {
@@ -68,7 +68,7 @@
 					return;
 				}
 
-				$("<parallax-slider />").load(function () {
+				$("<img />").load(function () {
 					var width  = this.width,
 						height = this.height,
 						widthRatio, heightRatio, parent;
