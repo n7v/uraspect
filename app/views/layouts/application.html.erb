@@ -15,9 +15,7 @@
     <!-- CSS and JS -->
     <%= stylesheet_link_tag 'application', :media => 'all' %>
     <!--[if IE 9]>
-      <link rel="stylesheet"
-            href="assets/plugins/parallax-slider/css/parallax_slider_for_ie9.css"
-            type="text/css">
+      <%= stylesheet_link_tag 'parallax-slider/parallax_slider_for_ie9', :media => "all" %>
       <script src="assets/js/respond.js"></script>
     <![endif]-->
     <%= javascript_include_tag 'application' %>
