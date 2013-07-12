@@ -69,11 +69,11 @@ ActiveRecord::Schema.define(:version => 20130712095731) do
   end
 
   create_table "docs", :force => true do |t|
-    t.integer  "doc_category_id"
+    t.integer  "category_id"
     t.string   "name"
     t.string   "file_source"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "feedbacks", :force => true do |t|
@@ -115,14 +115,6 @@ ActiveRecord::Schema.define(:version => 20130712095731) do
     t.boolean  "moderated",  :default => false
     t.datetime "created_at",                      :null => false
     t.datetime "updated_at",                      :null => false
-  end
-
-  create_table "sample_docs", :force => true do |t|
-    t.string   "category"
-    t.string   "name"
-    t.string   "file_source"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
   end
 
   create_table "seos", :force => true do |t|
