@@ -2,7 +2,9 @@
 ActiveAdmin.register Page do
   menu :priority => 3
   config.batch_actions = false
-
+  [:seo, :name, :slug, :content, :hidden, :created_at, :updated_at].each do |p_filter|
+    filter p_filter
+  end
 
   controller do
     def new
@@ -18,11 +20,11 @@ ActiveAdmin.register Page do
   end
 
   index do
-    column :id
-    column 'Заголовок', :name
-    column 'Псевдоним',:slug, sortable:false
+    column :name
+    column :slug, sortable:false
+    column :created_at
     column :parent
-    column "Скрытый", :hidden do |resource|
+    column :hidden do |resource|
       resource.hidden? ? 'Да' : 'Нет'
     end
     default_actions
