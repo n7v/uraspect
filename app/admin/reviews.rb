@@ -13,7 +13,6 @@ ActiveAdmin.register Review do
   end
 
   index do
-    column :id
     column :caption
     column :created_at
     column :moderated do |review|
@@ -23,7 +22,7 @@ ActiveAdmin.register Review do
   end
 
   form do |f|
-    f.inputs "Review" do
+    f.inputs do
       f.input :caption
       f.input :content, as: :text
       f.input :moderated

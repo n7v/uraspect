@@ -13,13 +13,13 @@ ActiveAdmin.register Jurisprudence do
   end
 
   index do
-    column :id
     column :name
+    column :created_at
     default_actions
   end
 
   form do |f|
-    f.inputs "Jurisprudence" do
+    f.inputs do
       f.input :name
       f.input :content, as: :ckeditor
     end

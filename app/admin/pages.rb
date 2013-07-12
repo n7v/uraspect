@@ -20,9 +20,9 @@ ActiveAdmin.register Page do
   end
 
   index do
-    column :id
     column :name
     column :slug, sortable:false
+    column :created_at
     column :parent
     column :hidden do |resource|
       resource.hidden? ? 'Да' : 'Нет'
