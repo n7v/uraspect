@@ -1,6 +1,6 @@
 # Encoding: utf-8
 ActiveAdmin.register Jurisprudence do
-  menu :label => 'Судебная практика', :priority => 4
+  menu :priority => 4
   config.batch_actions = false
 
   controller do

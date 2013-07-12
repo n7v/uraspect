@@ -21,10 +21,10 @@ ActiveAdmin.register Page do
 
   index do
     column :id
-    column 'Заголовок', :name
-    column 'Псевдоним',:slug, sortable:false
+    column :name
+    column :slug, sortable:false
     column :parent
-    column "Скрытый", :hidden do |resource|
+    column :hidden do |resource|
       resource.hidden? ? 'Да' : 'Нет'
     end
     default_actions
