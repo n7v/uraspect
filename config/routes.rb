@@ -19,4 +19,5 @@ Uraspect::Application.routes.draw do
   resources :pages 
   resources :jurisprudences
   resources :feedbacks, :only => :create
+  resources :reviews, :only => :create
 end

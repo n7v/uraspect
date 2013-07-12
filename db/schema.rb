@@ -105,6 +105,14 @@ ActiveRecord::Schema.define(:version => 20130711133917) do
   add_index "pages", ["seo_id"], :name => "index_pages_on_seo_id"
   add_index "pages", ["slug"], :name => "index_pages_on_slug", :unique => true
 
+  create_table "reviews", :force => true do |t|
+    t.string   "caption",    :default => "Гость"
+    t.text     "content"
+    t.boolean  "moderated",  :default => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+  end
+
   create_table "seos", :force => true do |t|
     t.string   "title"
     t.string   "keywords"
