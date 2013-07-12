@@ -2,8 +2,7 @@
 
 FactoryGirl.define do
   factory :doc do
-    doc_category_id 1
-    name "MyString"
-    file_source "MyString"
+    name { Faker::HipsterIpsum.phrase }
+    file_source "public/porn/hedgehogs.avi"
   end
 end
