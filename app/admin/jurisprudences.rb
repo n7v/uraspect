@@ -1,6 +1,6 @@
 # Encoding: utf-8
 ActiveAdmin.register Jurisprudence do
-  menu :label => 'Судебная практика', :priority => 4
+  menu :priority => 4
   config.batch_actions = false
 
   controller do
@@ -13,15 +13,15 @@ ActiveAdmin.register Jurisprudence do
   end
 
   index do
-    column :id
-    column 'Заголовок', :name
+    column :name
+    column :created_at
     default_actions
   end
 
   form do |f|
-    f.inputs "Jurisprudence" do
-      f.input :name, label: 'Заголовок'
-      f.input :content, as: :ckeditor, label: 'Контент'
+    f.inputs do
+      f.input :name
+      f.input :content, as: :ckeditor
     end
     f.actions
   end
