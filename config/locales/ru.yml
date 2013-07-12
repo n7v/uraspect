@@ -39,6 +39,12 @@ ru:
         few:    Документа
         many:   Документов
         other:  Документы
+      doc_category:
+        zero:   Категорий документов
+        one:    Категория документов
+        few:    Категории документов
+        many:   Категорий документов
+        other:  Категории документов
     attributes:
       admin_user:
         id:                     Номер
@@ -91,6 +97,11 @@ ru:
         sample_content_type:    Тип файла
         sample_file_size:       Размер файла в байтах
         sample_updated_at:      Дата обновления файла
+        created_at:             Дата создания
+        updated_at:             Дата обновления
+      doc_category:
+        id:                     Номер
+        name:                   Название
         created_at:             Дата создания
         updated_at:             Дата обновления
   formtastic:

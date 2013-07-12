@@ -1,18 +1,17 @@
-ActiveAdmin.register Doc do
-  menu :priority => 7
+ActiveAdmin.register DocCategory do
+  menu :priority => 6
   config.batch_actions = false
 
   controller do
     def new
-      @doc = Doc.new
+      @doc_category = DocCategory.new
     end
     def edit
-      @doc = Doc.find(params[:id])
+      @doc_category = DocCategory.find(params[:id])
     end
   end
 
   index do
-    column :category
     column :name
     column :created_at
     default_actions
@@ -20,9 +19,7 @@ ActiveAdmin.register Doc do
 
   form do |f|
     f.inputs do
-      f.input :category
       f.input :name
-      f.input :sample, as: :file
     end
     f.actions
   end
