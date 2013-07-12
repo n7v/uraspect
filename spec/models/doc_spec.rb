@@ -15,9 +15,9 @@ describe Doc do
     end
   end
 
-  describe '#file_source' do
+  describe '#sample' do
     it 'should not be empty' do
-      doc.file_source = ' '
+      doc.sample_file_name = ' '
       doc.should be_invalid
     end
 

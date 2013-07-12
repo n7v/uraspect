@@ -37,6 +37,17 @@ GIT
       activesupport (>= 3.0.4)
 
 GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: f2b273a62b4ef4430de2ce420df54bd269609561
+  specs:
+    paperclip (3.4.2)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.0)
+      mime-types
+
+GIT
   remote: git://github.com/wayneeseguin/rvm-capistrano.git
   revision: e51a3c6aef1f5c0db13f45d1ba440fad0cd722e3
   specs:
@@ -140,6 +151,10 @@ GEM
     ckeditor (4.0.4)
       mime-types
       orm_adapter
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.1)
+      climate_control (>= 0.0.3, < 1.0)
     code_analyzer (0.3.2)
       sexp_processor
     coderay (1.0.9)
@@ -468,6 +483,7 @@ DEPENDENCIES
   mini_magick
   mysql2
   noty-rails
+  paperclip!
   pry-rails
   quiet_assets
   rack-mini-profiler
