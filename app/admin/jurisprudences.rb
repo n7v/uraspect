@@ -14,14 +14,14 @@ ActiveAdmin.register Jurisprudence do
 
   index do
     column :id
-    column 'Заголовок', :name
+    column :name
     default_actions
   end
 
   form do |f|
     f.inputs "Jurisprudence" do
-      f.input :name, label: 'Заголовок'
-      f.input :content, as: :ckeditor, label: 'Контент'
+      f.input :name
+      f.input :content, as: :ckeditor
     end
     f.actions
   end
