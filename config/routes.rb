@@ -15,7 +15,7 @@ Uraspect::Application.routes.draw do
 
 
   get 'jurisprudences/:id' => 'jurisprudences#show'
-
+  resources :orders, :only => :create
   resources :pages 
   resources :jurisprudences
   resources :feedbacks, :only => :create
