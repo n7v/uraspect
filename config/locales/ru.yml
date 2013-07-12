@@ -5,12 +5,6 @@ ru:
     email:    Введите ваш e-mail
     message:  Введите ваше сообщение
     send:     Отправить
-  js:
-    project_prefix: "/ru"
-    wrong_email:    Введите правильный e-mail
-    short_message:  Ваше сообщение cлишком короткое
-    send_success:   Ваше сообщение успешно отправлено
-    send_error:     Произошла ошибка
   translation:
     en: English
     ru: Русский
@@ -62,10 +56,14 @@ ru:
         id:                     Номер
         name:                   Заголовок
         slug:                   Псевдоним
+        content:                Контент
         parent:                 Родительская страница
         parent_id:              Родительская страница
         hidden:                 Скрытая
+        created_at:             Дата создания
+        updated_at:             Дата обновления
         layout:                 Шаблон для страницы
+        ancestry:               Родительские страницы
       review:
         id:                     Номер
         caption:                Подпись
@@ -77,3 +75,12 @@ ru:
         content:                Контент
         created_at:             Дата создания
         updated_at:             Дата обновления
+  formtastic:
+    yes:      Да
+    no:       Нет
+    create:   Создать
+    update:   Обновить
+    submit:   Утвердить
+    cancel:   Отменить
+    reset:    Сбросить
+    required: требуется

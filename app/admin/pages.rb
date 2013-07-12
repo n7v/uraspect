@@ -2,7 +2,9 @@
 ActiveAdmin.register Page do
   menu :priority => 3
   config.batch_actions = false
-
+  [:seo, :name, :slug, :content, :hidden, :created_at, :updated_at].each do |p_filter|
+    filter p_filter
+  end
 
   controller do
     def new
