@@ -33,6 +33,12 @@ ru:
         few:    Судебных практики
         many:   Судебных практик
         other:  Судебные практики
+      doc:
+        zero:   Документов
+        one:    Документ
+        few:    Документа
+        many:   Документов
+        other:  Документы
     attributes:
       admin_user:
         id:                     Номер
@@ -77,12 +83,22 @@ ru:
         content:                Контент
         created_at:             Дата создания
         updated_at:             Дата обновления
+      doc:
+        id:                     Номер
+        category:               Категория
+        name:                   Заголовок
+        sample_file_name:       Имя файла
+        sample_content_type:    Тип файла
+        sample_file_size:       Размер файла в байтах
+        sample_updated_at:      Дата обновления файла
+        created_at:             Дата создания
+        updated_at:             Дата обновления
   formtastic:
     yes:      Да
     no:       Нет
     create:   Создать
     update:   Обновить
-    submit:   Утвердить
+    submit:   Отправить
     cancel:   Отменить
     reset:    Сбросить
     required: требуется
