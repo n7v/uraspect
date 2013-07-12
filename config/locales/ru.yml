@@ -27,6 +27,12 @@ ru:
         few: Страницы
         many: Страниц
         other: Страницы
+      review:
+        zero: Отзывов
+        one: Отзыв
+        few: Отзыва
+        many: Отзывов
+        other: Отзывы
     attributes:
       admin_user:
         id: Номер
@@ -54,3 +60,8 @@ ru:
         parent_id: Родительская страница
         hidden: Скрытая
         layout: Шаблон для страницы
+      review:
+        id: Номер
+        caption: Подпись
+        content: Текст отзыва
+        moderated: Прошёл модерацию
