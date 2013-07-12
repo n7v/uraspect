@@ -1,7 +1,5 @@
-# Read about factories at https://github.com/thoughtbot/factory_girl
-
 FactoryGirl.define do
   factory :doc_category do
-    name "MyString"
+    name { Faker::DizzleIpsum.word.capitalize }
   end
 end
