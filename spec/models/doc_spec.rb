@@ -17,12 +17,13 @@ describe Doc do
 
   describe '#sample' do
     it 'should not be empty' do
-      doc.sample_file_name = ' '
+      doc.sample.destroy
       doc.should be_invalid
     end
 
     it 'should not be fake' do
-      pending "File should exist"
+      doc.save
+      File.exist?(doc.sample.path).should == true
     end
   end
 
