@@ -10,4 +10,7 @@ class Doc < ActiveRecord::Base
   validates :name, presence: true
   validates_attachment :sample, presence: true,
                                 content_type: { content_type: [TYPE_DOC, TYPE_DOCX] }
+
+  default_scope :order => 'docs.name ASC'
+  scope :without_category, -> { where('category_id IS NULL') }
 end

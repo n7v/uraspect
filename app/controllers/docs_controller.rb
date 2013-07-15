@@ -1,6 +1,7 @@
 class DocsController < ApplicationController
   def index
-    @docs = Doc.all
+    @doc_categories = DocCategory.all
+    @docs_without_category = Doc.without_category
   end
 
   def load
