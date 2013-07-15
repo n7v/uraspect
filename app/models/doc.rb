@@ -8,8 +8,8 @@ class Doc < ActiveRecord::Base
   belongs_to :category, class_name: "DocCategory", foreign_key: :category_id
 
   validates :name, presence: true
-  validates_attachment :example, presence: true,
-                                content_type: { content_type: [TYPE_DOC, TYPE_DOCX] }
+  validates_attachment :example,  presence: true,
+                                  content_type: { content_type: [TYPE_DOC, TYPE_DOCX] }
 
   default_scope :order => 'docs.name ASC'
   scope :without_category, -> { where('category_id IS NULL') }
