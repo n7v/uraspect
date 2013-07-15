@@ -2,5 +2,10 @@
 
 FactoryGirl.define do
   factory :order do
+    last_name  { Faker::HipsterIpsum.phrase }
+    first_name { Faker::HipsterIpsum.phrase }
+    content    { Faker::HipsterIpsum.paragraph }
+    email      { Faker::Internet.email }
+    phone      { Faker.numerify("#"*10) }
   end
 end
