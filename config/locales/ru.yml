@@ -93,10 +93,10 @@ ru:
         id:                     Номер
         category:               Категория
         name:                   Заголовок
-        sample_file_name:       Имя файла
-        sample_content_type:    Тип файла
-        sample_file_size:       Размер файла в байтах
-        sample_updated_at:      Дата обновления файла
+        example_file_name:      Имя файла
+        example_content_type:   Тип файла
+        example_file_size:      Размер файла в байтах
+        example_updated_at:     Дата обновления файла
         created_at:             Дата создания
         updated_at:             Дата обновления
       doc_category:

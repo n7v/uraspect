@@ -1,15 +1,6 @@
 ActiveAdmin.register Doc do
-  menu :priority => 7
+  menu priority: 7
   config.batch_actions = false
-
-  controller do
-    def new
-      @doc = Doc.new
-    end
-    def edit
-      @doc = Doc.find(params[:id])
-    end
-  end
 
   index do
     column :category
@@ -22,7 +13,7 @@ ActiveAdmin.register Doc do
     f.inputs do
       f.input :category
       f.input :name
-      f.input :sample, as: :file
+      f.input :example, as: :file
     end
     f.actions
   end

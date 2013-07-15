@@ -71,13 +71,15 @@ ActiveRecord::Schema.define(:version => 20130712095731) do
   create_table "docs", :force => true do |t|
     t.integer  "category_id"
     t.string   "name"
-    t.string   "sample_file_name"
-    t.string   "sample_content_type"
-    t.integer  "sample_file_size"
-    t.datetime "sample_updated_at"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
+    t.string   "example_file_name"
+    t.string   "example_content_type"
+    t.integer  "example_file_size"
+    t.datetime "example_updated_at"
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
   end
+
+  add_index "docs", ["category_id"], :name => "index_docs_on_category_id"
 
   create_table "feedbacks", :force => true do |t|
     t.string   "email"

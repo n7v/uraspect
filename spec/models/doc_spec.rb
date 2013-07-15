@@ -15,15 +15,15 @@ describe Doc do
     end
   end
 
-  describe '#sample' do
+  describe '#example' do
     it 'should not be empty' do
-      doc.sample.destroy
+      doc.example.destroy
       doc.should be_invalid
     end
 
     it 'should not be fake' do
       doc.save
-      File.exist?(doc.sample.path).should == true
+      File.exist?(doc.example.path).should == true
     end
   end
 

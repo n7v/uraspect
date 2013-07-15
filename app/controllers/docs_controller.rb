@@ -5,7 +5,7 @@ class DocsController < ApplicationController
   end
 
   def load
-    filename = Doc.find(params[:doc_id]).sample.path
+    filename = Doc.find(params[:doc_id]).example.path
     respond_to { |format| format.html { send_file filename } }
   end
 end
