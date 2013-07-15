@@ -28,5 +28,5 @@ Feature: Reviews
     When I go to the admin reviews page
     And I follow "Изменить"
     When I check "Прошёл модерацию"
-    And I press "Update Отзыв"
+    And I press "Обновить"
     Then I should see "Прошёл модерацию true"
