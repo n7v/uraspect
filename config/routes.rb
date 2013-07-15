@@ -8,6 +8,11 @@ Uraspect::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+
+  resources :docs, :only => :index do
+    get 'load'
+  end
+
   get 'jurisprudences' => 'jurisprudences#index'
   get 'index' => 'pages#index'
   get 'price_of_services' => 'pages#price_of_services'
@@ -16,7 +21,7 @@ Uraspect::Application.routes.draw do
 
   get 'jurisprudences/:id' => 'jurisprudences#show'
 
-  resources :pages 
+  resources :pages
   resources :jurisprudences
   resources :feedbacks, :only => :create
   resources :reviews, :only => :create
