@@ -12,7 +12,7 @@ ActiveAdmin.register Order do
     f.inputs "Order" do
       f.input :last_name, as: :string, label: 'Фамилия'
       f.input :first_name, as: :string, label: 'Имя'
-      f.input :phone, as: :integer, label: 'Телефон'
+      f.input :phone, as: :string, label: 'Телефон'
       f.input :email, as: :string, label: 'Email'
       f.input :content, as: :text, label: 'Контент'
     end
