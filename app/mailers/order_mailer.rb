@@ -6,12 +6,12 @@ class OrderMailer < ActionMailer::Base
     'admin@example.com'
   ]
   
-  def order_of_services(last_name,first_name, phone, email, content)
-    @last_name = last_name
-    @last_name = first_name
-    @phon = phone
-    @email = email
-    @content = content
+  def order_of_services(order)
+    @last_name = order.last_name
+    @last_name = order.first_name
+    @phon = order.phone
+    @email = order.email
+    @content = order.content
     
     mail :to => ADMIN,
          :subject => "Заказ услуг"
