@@ -33,6 +33,18 @@ ru:
         few:    Судебных практики
         many:   Судебных практик
         other:  Судебные практики
+      doc:
+        zero:   Документов
+        one:    Документ
+        few:    Документа
+        many:   Документов
+        other:  Документы
+      doc_category:
+        zero:   Категорий документов
+        one:    Категория документов
+        few:    Категории документов
+        many:   Категорий документов
+        other:  Категории документов
     attributes:
       admin_user:
         id:                     Номер
@@ -77,12 +89,27 @@ ru:
         content:                Контент
         created_at:             Дата создания
         updated_at:             Дата обновления
+      doc:
+        id:                     Номер
+        category:               Категория
+        name:                   Заголовок
+        example_file_name:      Имя файла
+        example_content_type:   Тип файла
+        example_file_size:      Размер файла в байтах
+        example_updated_at:     Дата обновления файла
+        created_at:             Дата создания
+        updated_at:             Дата обновления
+      doc_category:
+        id:                     Номер
+        name:                   Название
+        created_at:             Дата создания
+        updated_at:             Дата обновления
   formtastic:
     yes:      Да
     no:       Нет
     create:   Создать
     update:   Обновить
-    submit:   Утвердить
+    submit:   Отправить
     cancel:   Отменить
     reset:    Сбросить
     required: требуется
