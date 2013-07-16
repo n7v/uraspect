@@ -20,6 +20,7 @@ gem 'email_validator', require: 'email_validator/strict'
 gem 'truncate_html'
 gem "font-awesome-rails"
 gem "paperclip", github: "thoughtbot/paperclip"
+gem 'thinking-sphinx', '3.0.0'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

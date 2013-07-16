@@ -1,4 +1,6 @@
 class Doc < ActiveRecord::Base
+  include ThinkingSphinx::Scopes
+
   attr_accessible :name, :category_id, :example
   has_attached_file :example
 
@@ -13,4 +15,5 @@ class Doc < ActiveRecord::Base
 
   default_scope :order => 'docs.name ASC'
   scope :without_category, -> { where('category_id IS NULL') }
+  sphinx_scope(:with_name) { |name| { name: name } }
 end

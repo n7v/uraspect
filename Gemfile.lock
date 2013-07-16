@@ -256,6 +256,7 @@ GEM
     inherited_resources (1.4.0)
       has_scope (~> 0.5.0)
       responders (~> 0.9)
+    innertube (1.0.2)
     journey (1.0.4)
     jquery-rails (2.3.0)
       railties (>= 3.0, < 5.0)
@@ -279,6 +280,7 @@ GEM
       activesupport (~> 3.1)
       polyamorous (~> 0.5.0)
     method_source (0.8.1)
+    middleware (0.1.0)
     mime-types (1.23)
     mini_magick (3.6.0)
       subexec (~> 0.2.1)
@@ -344,6 +346,7 @@ GEM
       rails (>= 3.0.0)
     responders (0.9.3)
       railties (~> 3.1)
+    riddle (1.5.7)
     roboto (0.1.0)
       actionpack (>= 3.0.0)
       rails (>= 3.1.0)
@@ -404,6 +407,12 @@ GEM
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
+    thinking-sphinx (3.0.0)
+      activerecord (>= 3.1.0)
+      builder (>= 2.1.2)
+      innertube (>= 1.0.2)
+      middleware (>= 0.1.0)
+      riddle (>= 1.5.4)
     thor (0.18.1)
     tilt (1.4.1)
     tinder (1.9.2)
@@ -500,6 +509,7 @@ DEPENDENCIES
   simplecov
   therubyracer
   thin
+  thinking-sphinx (= 3.0.0)
   truncate_html
   uglifier (>= 1.0.3)
   unicorn
