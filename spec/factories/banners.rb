@@ -1,6 +1,6 @@
-# Read about factories at https://github.com/thoughtbot/factory_girl
-
 FactoryGirl.define do
   factory :banner do
+    content Faker::HipsterIpsum.words(3).join("\n")
+    url '/'
   end
 end
