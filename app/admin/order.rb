@@ -4,17 +4,21 @@ ActiveAdmin.register Order do
 
   index do
     column :id
+    column :last_name 
+    column :first_name
+    column :phone
+    column :email
     column 'Оставлен', :created_at
     default_actions
   end
 
   form do |f|
     f.inputs "Order" do
-      f.input :last_name, as: :string, label: 'Фамилия'
-      f.input :first_name, as: :string, label: 'Имя'
-      f.input :phone, as: :string, label: 'Телефон'
-      f.input :email, as: :string, label: 'Email'
-      f.input :content, as: :text, label: 'Контент'
+      f.input :last_name, as: :string
+      f.input :first_name, as: :string
+      f.input :phone, as: :string
+      f.input :email, as: :string
+      f.input :content, as: :text
     end
     f.actions
   end
