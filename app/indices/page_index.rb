@@ -1,4 +1,3 @@
 ThinkingSphinx::Index.define :page, with: :active_record do
-  indexes name
-  indexes content
+  indexes name, content
 end
