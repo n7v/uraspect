@@ -21,6 +21,12 @@ ru:
         few:    Страницы
         many:   Страниц
         other:  Страницы
+      partner:
+        zero: Партнеров
+        one: Партнер
+        few: Партнеров
+        many: Партнеров
+        other: Партнеры
       review:
         zero:   Отзывов
         one:    Отзыв
