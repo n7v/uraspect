@@ -8,4 +8,3 @@ class CreateBanners < ActiveRecord::Migration
     end
   end
 end
-

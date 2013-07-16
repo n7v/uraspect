@@ -8,6 +8,4 @@ ActiveAdmin.register Banner do
 
     f.actions
   end
-
 end
-
