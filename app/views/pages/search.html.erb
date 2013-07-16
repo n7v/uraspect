@@ -1,0 +1,14 @@
+<div class="search_results">
+  <% @search.each do |model, result| %>
+    <% next if result[:objects].empty? %>
+    <h3><%= search_title_for model %></h3>
+    <% result[:objects].each do |object| %>
+      <div class="<%= model %>_search_results">
+        <div><i><%= raw result[:excerpter].excerpt!(object.name) %></i></div>
+        <% unless model == :doc %>
+          <div><%= raw result[:excerpter].excerpt!(object.content) %></div>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
