@@ -1,2 +1,12 @@
 development:
   morphology: stem_ru
+  indexed_models:
+    - Doc
+    - Jurisprudence
+    - Page
+production:
+  morphology: stem_ru
+  indexed_models:
+    - Doc
+    - Jurisprudence
+    - Page

@@ -15,5 +15,4 @@ class Doc < ActiveRecord::Base
 
   default_scope :order => 'docs.name ASC'
   scope :without_category, -> { where('category_id IS NULL') }
-  sphinx_scope(:with_name) { |name| { name: name } }
 end
