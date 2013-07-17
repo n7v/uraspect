@@ -12,6 +12,17 @@ class PagesController < ApplicationController
     render params[:slug] if controller_view_exists?(params[:slug])
   end
 
+  def search
+    query = params[:query]
+    @search = { :doc => { }, :jurisprudence => { }, :page => { } }
+    @search.each do |model, result|
+      @search[model] = {
+        :objects    => model.to_s.classify.constantize.search(query),
+        :excerpter  => ThinkingSphinx::Excerpter.new("#{model}_core", query)
+      }
+    end
+  end
+
   private
 
   def view_exists?(view)

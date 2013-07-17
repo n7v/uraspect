@@ -1,4 +1,6 @@
 class Doc < ActiveRecord::Base
+  include ThinkingSphinx::Scopes
+
   attr_accessible :name, :category_id, :example
   has_attached_file :example
 

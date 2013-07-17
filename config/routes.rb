@@ -12,6 +12,9 @@ Uraspect::Application.routes.draw do
   resources :docs, :only => :index do
     get 'load'
   end
+  resources :pages do
+    get 'search', on: :collection
+  end
 
   get 'jurisprudences' => 'jurisprudences#index'
   get 'index' => 'pages#index'
@@ -21,7 +24,6 @@ Uraspect::Application.routes.draw do
 
   get 'jurisprudences/:id' => 'jurisprudences#show'
 
-  resources :pages
   resources :jurisprudences
   resources :feedbacks, :only => :create
   resources :reviews, :only => :create
