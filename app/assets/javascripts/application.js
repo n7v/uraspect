@@ -23,5 +23,4 @@
 //= require modernizr.custom
 //= require respond
 //= require rails.validations
-//= require jquery.mousewheel
 //= require_tree .

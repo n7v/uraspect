@@ -30,10 +30,8 @@ class Page < ActiveRecord::Base
   private
 
   def fill_slug
-    if slug.blank?
-      slug = translations.find{|t| t.locale == :en}.try(:name)
-      slug = slug || translations.find{|t| t.locale == :ru}.try(:name)
-      self.slug = Russian::translit(slug).parameterize if slug.present?
+    if slug.blank? and name.present?
+      self.slug = Russian::translit(name).parameterize
     end
   end
 end
