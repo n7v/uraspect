@@ -33,6 +33,12 @@ ru:
         few:    Судебных практики
         many:   Судебных практик
         other:  Судебные практики
+      order:
+        zero:   Заказов
+        one:    Заказ
+        few:    Заказов
+        many:   Заказов
+        other:  Заказы  
       doc:
         zero:   Документов
         one:    Документ
@@ -92,6 +98,11 @@ ru:
         content:                Контент
         created_at:             Дата создания
         updated_at:             Дата обновления
+      order:
+        content:                Заказ
+        last_name:              Фамилия
+        first_name:             Имя
+        phone:                  Телефон
       doc:
         id:                     Номер
         category:               Категория
