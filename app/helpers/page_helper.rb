@@ -21,4 +21,19 @@ module PageHelper
     end
   end
 
+  def excerpt(result, str)
+    result[:excerpter].excerpt! str
+  end
+
+  def search_object_path(model, object)
+    case model
+    when :jurisprudence
+      jurisprudence_path(object)
+    when :doc
+      doc_load_path(object)
+    when :page
+      slug_path(object)
+    end
+  end
+
 end

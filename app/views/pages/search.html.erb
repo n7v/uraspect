@@ -3,12 +3,7 @@
     <% next if result[:objects].empty? %>
     <h3><%= search_title_for model %></h3>
     <% result[:objects].each do |object| %>
-      <div class="<%= model %>_search_results">
-        <div><i><%= object.name %></i></div>
-        <% unless model == :doc %>
-          <div><%= object.content %></div>
-        <% end %>
-      </div>
+      <%= render 'pages/search/object', model: model, result: result, object: object %>
     <% end %>
   <% end %>
 </div>
