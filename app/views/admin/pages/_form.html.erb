@@ -2,8 +2,8 @@
 
 <%= semantic_form_for [:admin, resource] do |f| %>
   <%= f.inputs "Основное" do %>
-    <%= f.input :name, label: 'Заголовок страницы' %>
-    <%= f.input :content, as: :ckeditor, label: 'контент' %>
+    <%= f.input :name %>
+    <%= f.input :content, as: :ckeditor %>
     <%= f.input :position %>
     <%= f.input :hidden, label: 'Скрыть пункт меню' %>
     <%= f.input :parent_id, as: :select,
@@ -15,14 +15,12 @@
   <% end %>
 
   <%= f.semantic_fields_for :seo do |s| %>
-    <div class="globalize-inputs globalize-seo">
+    <%= s.inputs "Seo" do %>
       <%= f.input :slug, required: false %>
-      <%= s.inputs "Seo" do %>
-        <%= s.input :title, label: 'Заголовок' %>
-        <%= s.input :keywords, label: 'Ключевые слова' %>
-        <%= s.input :description, label: 'Описание' %>
-      <% end %>
-    </div>
+      <%= s.input :title %>
+      <%= s.input :keywords %>
+      <%= s.input :description %>
+    <% end %>
   <% end %>
 
   <%= f.actions %>
