@@ -5,7 +5,8 @@
         <% Page.roots.visible.each do |page| %>
           <li>
             <% if page.children.any? %>
-              <%= link_to '#', :class => 'dropdown-toggle', :'data-toggle' => 'dropdown' do %>
+              <%= link_to '#', :class => "dropdown-toggle #{menu_item_state(page)}",
+                          :'data-toggle' => 'dropdown' do %>
                 <%= raw(page.name) %>
                 <b class='caret'></b>
               <% end %>
@@ -13,13 +14,14 @@
               <ul class="dropdown-menu">
                 <% page.children.each do |child| %>
                   <li>
-                    <%= link_to raw(child.name), slug_path(child) %>
+                    <%= link_to raw(child.name), slug_path(child),
+                                :class => menu_item_state(child) %>
                   </li>
                 <% end %>
               </ul>
               <b class="caret-out"></b>
             <% else %>
-              <%= link_to raw(page.name), slug_path(page) %>
+              <%= link_to raw(page.name), slug_path(page), :class => menu_item_state(child) %>
             <% end %>
           </li>
         <% end %>

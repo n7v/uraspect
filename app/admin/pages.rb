@@ -2,9 +2,14 @@
 ActiveAdmin.register Page do
   menu :priority => 3
   config.batch_actions = false
+
   [:seo, :name, :slug, :content, :hidden, :created_at, :updated_at].each do |p_filter|
     filter p_filter
   end
+
+  config.sort_order = 'position_asc'
+
+  sortable
 
   controller do
     def new
@@ -20,8 +25,10 @@ ActiveAdmin.register Page do
   end
 
   index do
+    sortable_handle_column
+    column :position, :sortable => :position
     column :name
-    column :slug, sortable:false
+    column :slug
     column :created_at
     column :parent
     column :hidden do |resource|
