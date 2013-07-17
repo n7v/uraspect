@@ -1,7 +1,7 @@
 class OrdersController < ApplicationController
  
   def create
- 		@order = Order.new(params[:order])
+    @order = Order.new(params[:order])
  	    if @order.save
         OrderMailer.order_of_services(@order).deliver
       	redirect_to thanks_path(order_id: @order.id)
