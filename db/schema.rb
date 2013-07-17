@@ -117,10 +117,12 @@ ActiveRecord::Schema.define(:version => 20130716130002) do
     t.integer  "seo_id"
     t.string   "layout",     :default => "application"
     t.string   "ancestry"
+    t.integer  "position"
   end
 
   add_index "pages", ["ancestry"], :name => "index_pages_on_ancestry"
   add_index "pages", ["layout"], :name => "index_pages_on_layout"
+  add_index "pages", ["position"], :name => "index_pages_on_position"
   add_index "pages", ["seo_id"], :name => "index_pages_on_seo_id"
   add_index "pages", ["slug"], :name => "index_pages_on_slug", :unique => true
 
