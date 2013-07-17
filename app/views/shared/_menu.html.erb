@@ -3,27 +3,7 @@
     <div class="nav-collapse collapse">
       <ul class="nav top-2">
         <% Page.roots.visible.each do |page| %>
-          <li>
-            <% if page.children.any? %>
-              <%= link_to '#', :class => "dropdown-toggle #{menu_item_state(page)}",
-                          :'data-toggle' => 'dropdown' do %>
-                <%= raw(page.name) %>
-                <b class='caret'></b>
-              <% end %>
-
-              <ul class="dropdown-menu">
-                <% page.children.each do |child| %>
-                  <li>
-                    <%= link_to raw(child.name), slug_path(child),
-                                :class => menu_item_state(child) %>
-                  </li>
-                <% end %>
-              </ul>
-              <b class="caret-out"></b>
-            <% else %>
-              <%= link_to raw(page.name), slug_path(page), :class => menu_item_state(page) %>
-            <% end %>
-          </li>
+          <%= render 'shared/menu/item', page: page %>
         <% end %>
 
         <li class="search_icon"><a class="search"><i class="icon-search search-btn"></i></a></li>
