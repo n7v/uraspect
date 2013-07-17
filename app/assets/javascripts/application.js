@@ -14,13 +14,11 @@
 //= require jquery_ujs
 //= require bootstrap-modal
 //= require bootstrap/js/bootstrap.min
-//= require jquery.mCustomScrollbar
-//= require jquery.mousewheel
 //= require shared/global
 //= require shared/eco
-//= require flexslider/jquery.flexslider-min
-//= require parallax-slider/js/modernizr
-//= require parallax-slider/js/jquery.cslider
+//= require flexslider/jquery.flexslider
+//= require parallax-slider/modernizr
+//= require parallax-slider/jquery.cslider
 //= require back-to-top
 //= require modernizr.custom
 //= require respond
