@@ -12,7 +12,7 @@ class OrdersController < ApplicationController
   end
 
   def thanks_order
- 		@order = Order.find(params['order_id'])
+    @order = Order.find(params['order_id'])
   end
 
 end
