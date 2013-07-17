@@ -1,5 +1,4 @@
-# Template Baltic IT
-
+# Uraspect
 ## Деплой
 см. [DEPLOY.md](DEPLOY.md)
 
@@ -9,21 +8,21 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: balticit_dev
+  database: uraspect_dev
   username: root
   password: ''
 
 test: &test
   adapter: mysql2
   encoding: utf8
-  database: balticit_test
+  database: uraspect_test
   username: root
   password: ''
 
 production:
   adapter: mysql2
   encoding: utf8
-  database: balticit_prod
+  database: uraspect_prod
   username: root
   password: ''
 
