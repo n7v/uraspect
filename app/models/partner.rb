@@ -1,4 +1,5 @@
 # encoding: utf-8
+
 class Partner < ActiveRecord::Base
   attr_accessible :logo, :url
 
