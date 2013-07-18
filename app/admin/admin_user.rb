@@ -1,13 +1,13 @@
 # Encoding: utf-8
 ActiveAdmin.register AdminUser do
-  menu :priority => 1
+  menu priority: 1
 
   index do
     column :email
-    column :created_at
     column :current_sign_in_at
     column :last_sign_in_at
     column :sign_in_count
+    column :created_at
     default_actions
   end
 

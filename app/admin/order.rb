@@ -1,23 +1,23 @@
 # Encoding: utf-8
 ActiveAdmin.register Order do
+  menu priority: 9
   config.batch_actions = false
 
   index do
-    column :id
-    column :last_name 
     column :first_name
+    column :last_name
     column :phone
     column :email
-    column 'Оставлен', :created_at
+    column :created_at
     default_actions
   end
 
   form do |f|
     f.inputs "Order" do
-      f.input :last_name, as: :string
-      f.input :first_name, as: :string
-      f.input :phone, as: :string
-      f.input :email, as: :string
+      f.input :last_name
+      f.input :first_name
+      f.input :phone
+      f.input :email
       f.input :content, as: :text
     end
     f.actions
