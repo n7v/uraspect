@@ -1,6 +1,6 @@
 ru:
   footer:
-    text:     Компания BalticIT
+    text: "Компания"
   mailer:
     email:    Введите ваш e-mail
     message:  Введите ваше сообщение
@@ -33,6 +33,12 @@ ru:
         few:    Судебных практики
         many:   Судебных практик
         other:  Судебные практики
+      order:
+        zero:   Заказов
+        one:    Заказ
+        few:    Заказов
+        many:   Заказов
+        other:  Заказы  
       doc:
         zero:   Документов
         one:    Документ
@@ -45,6 +51,8 @@ ru:
         few:    Категории документов
         many:   Категорий документов
         other:  Категории документов
+      seo:
+        СЕО
     attributes:
       admin_user:
         id:                     Номер
@@ -65,17 +73,18 @@ ru:
         created_at:             Дата создания
         updated_at:             Дата обновления
       page:
-        id:                     Номер
-        name:                   Заголовок
-        slug:                   Псевдоним
+        ancestry:               Родительские страницы
+        created_at:             Дата создания
         content:                Контент
+        hidden:                 Скрытая
+        id:                     Номер
+        layout:                 Шаблон для страницы
+        name:                   Заголовок
         parent:                 Родительская страница
         parent_id:              Родительская страница
-        hidden:                 Скрытая
-        created_at:             Дата создания
+        position:               Позиция
+        slug:                   Псевдоним
         updated_at:             Дата обновления
-        layout:                 Шаблон для страницы
-        ancestry:               Родительские страницы
       review:
         id:                     Номер
         caption:                Подпись
@@ -89,6 +98,11 @@ ru:
         content:                Контент
         created_at:             Дата создания
         updated_at:             Дата обновления
+      order:
+        content:                Заказ
+        last_name:              Фамилия
+        first_name:             Имя
+        phone:                  Телефон
       doc:
         id:                     Номер
         category:               Категория
@@ -104,12 +118,9 @@ ru:
         name:                   Название
         created_at:             Дата создания
         updated_at:             Дата обновления
-  formtastic:
-    yes:      Да
-    no:       Нет
-    create:   Создать
-    update:   Обновить
-    submit:   Отправить
-    cancel:   Отменить
-    reset:    Сбросить
-    required: требуется
+      seo:
+        title: Заголовок
+        keywords: Ключевые слова
+        description: Описание
+        created_at: Дата создания
+        updated_at: Дата обновления
