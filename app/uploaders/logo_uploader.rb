@@ -29,7 +29,6 @@ class LogoUploader < CarrierWave::Uploader::Base
       img = yield(img) if block_given?
       img
     end
-  end
-  
+  end 
 end
 
