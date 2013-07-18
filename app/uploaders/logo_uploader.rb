@@ -28,6 +28,9 @@ class LogoUploader < CarrierWave::Uploader::Base
 
   version :thumb do
     process :resize_to_fill => [180, 181]
+    version :grey do
+   
+    end
   end
 
   def extension_white_list
