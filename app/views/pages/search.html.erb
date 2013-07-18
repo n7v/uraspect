@@ -1,9 +1,5 @@
 <div class="search_results">
-  <% @search.each do |model, result| %>
-    <% next if result[:objects].empty? %>
-    <h3><%= search_title_for model %></h3>
-    <% result[:objects].each do |object| %>
-      <%= render 'pages/search/object', model: model, result: result, object: object %>
-    <% end %>
-  <% end %>
+  <%= render 'pages/search/results/docs' %>
+  <%= render 'pages/search/results/jurisprudences' %>
+  <%= render 'pages/search/results/pages' %>
 </div>

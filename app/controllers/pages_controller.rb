@@ -15,13 +15,14 @@ class PagesController < ApplicationController
 
   def search
     query = params[:query]
-    @search = { :doc => { }, :jurisprudence => { }, :page => { } }
-    @search.each do |model, result|
-      @search[model] = {
-        :objects    => model.to_s.classify.constantize.search(query),
-        :excerpter  => ThinkingSphinx::Excerpter.new("#{model}_core", query)
-      }
-    end
+
+    @docs = Doc.search(query)
+    @jurisprudences = Jurisprudence.search(query)
+    @pages = Page.search(query)
+
+    @docs_excerpter = ThinkingSphinx::Excerpter.new("doc_core", query)
+    @jurisprudences_excerpter = ThinkingSphinx::Excerpter.new("jurisprudence_core", query)
+    @pages_excerpter = ThinkingSphinx::Excerpter.new("page_core", query)
   end
 
   private
