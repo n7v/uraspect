@@ -11,8 +11,11 @@ ru:
   activerecord:
     models:
       admin_user:
-        one:    Администратор
-        other:  Администраторы
+        zero: Администраторов
+        one: Администратор
+        few: Администраторов
+        many: Администраторов
+        other: Администраторы
       feedback:
         Обратная связь
       banner:
@@ -44,7 +47,7 @@ ru:
         one:    Заказ
         few:    Заказов
         many:   Заказов
-        other:  Заказы  
+        other:  Заказы
       doc:
         zero:   Документов
         one:    Документ
@@ -109,6 +112,8 @@ ru:
         last_name:              Фамилия
         first_name:             Имя
         phone:                  Телефон
+        created_at:             Оставлен
+        updated_at:             Обновлён
       banner:
         id: Номер
         content: Содержание

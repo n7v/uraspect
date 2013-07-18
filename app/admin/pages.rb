@@ -26,14 +26,14 @@ ActiveAdmin.register Page do
 
   index do
     sortable_handle_column
-    column :position, :sortable => :position
+    column :position, sortable: :position
     column :name
     column :slug
-    column :created_at
     column :parent
     column :hidden do |resource|
       resource.hidden? ? 'Да' : 'Нет'
     end
+    column :created_at
     default_actions
   end
 

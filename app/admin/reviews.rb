@@ -14,10 +14,10 @@ ActiveAdmin.register Review do
 
   index do
     column :caption
-    column :created_at
     column :moderated do |review|
       review.moderated? ? 'Да' : 'Нет'
     end
+    column :created_at
     default_actions
   end
 
