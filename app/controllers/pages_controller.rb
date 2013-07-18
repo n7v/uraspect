@@ -13,6 +13,18 @@ class PagesController < ApplicationController
     render params[:slug] if controller_view_exists?(params[:slug])
   end
 
+  def search
+    query = params[:query]
+
+    @docs = Doc.search(query)
+    @jurisprudences = Jurisprudence.search(query)
+    @pages = Page.search(query)
+
+    @docs_excerpter = ThinkingSphinx::Excerpter.new("doc_core", query)
+    @jurisprudences_excerpter = ThinkingSphinx::Excerpter.new("jurisprudence_core", query)
+    @pages_excerpter = ThinkingSphinx::Excerpter.new("page_core", query)
+  end
+
   private
 
   def view_exists?(view)
