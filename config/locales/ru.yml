@@ -27,6 +27,12 @@ ru:
         few:    Страницы
         many:   Страниц
         other:  Страницы
+      partner:
+        zero: Партнеров
+        one: Партнер
+        few: Партнеров
+        many: Партнеров
+        other: Партнеры
       review:
         zero:   Отзывов
         one:    Отзыв
@@ -125,6 +131,12 @@ ru:
         example_updated_at:     Дата обновления файла
         created_at:             Дата создания
         updated_at:             Дата обновления
+      partner:
+        id: Номер
+        created_at: Дата создания
+        updated_at: Дата обновления
+        logo: Логотип
+        url: Ссылка
       doc_category:
         id:                     Номер
         name:                   Название
