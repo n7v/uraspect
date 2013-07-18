@@ -2,6 +2,7 @@ require 'bundler/capistrano'
 #require 'capistrano-helpers/migrations'
 #require 'capistrano-helpers/shared'
 require 'capistrano-helpers/privates'
+require 'thinking_sphinx/capistrano'
 
 set :stages, %w(production staging)
 set :default_stage, "staging"
