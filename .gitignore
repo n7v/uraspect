@@ -36,5 +36,5 @@ pickle-email-*.html
 /nbproject
 /config/database.yml
 /.idea
-/config/development.sphinx.conf
-/db/sphinx/development/*
+/db/sphinx/*
+/config/*.sphinx.conf
