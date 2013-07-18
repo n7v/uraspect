@@ -1,3 +1,4 @@
+# encoding: utf-8
 module PageHelper
 
   def raw_short_content_for(object)
@@ -10,5 +11,4 @@ module PageHelper
       'current'
     end
   end
-
 end
