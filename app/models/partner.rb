@@ -8,5 +8,4 @@ class Partner < ActiveRecord::Base
   def to_s
     "Партнер ##{id}"
   end
-
 end
