@@ -1,4 +1,5 @@
 class Doc < ActiveRecord::Base
+
   attr_accessible :name, :category_id, :example
   has_attached_file :example
 
