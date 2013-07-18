@@ -20,7 +20,6 @@
 //= require parallax-slider/modernizr
 //= require parallax-slider/jquery.cslider
 //= require back-to-top
-//= require modernizr.custom
 //= require respond
 //= require rails.validations
 //= require_tree .
